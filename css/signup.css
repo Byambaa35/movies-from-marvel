@@ -1,0 +1,264 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto Flex', sans-serif;
+}
+
+.header {
+    width: 100vw;
+    background-color: rgb(255,22,32);
+    display: flex;
+    justify-content: center;
+}
+
+.header a {
+    text-decoration: none;
+    color: white
+}
+
+.header a:hover {
+    animation: loop-pop;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    transition: 0.3s;
+}
+
+@keyframes loop-pop{
+    0%{transform: scale(1);}
+    50%{transform: scale(1.2)}
+    100%{transform: scale(1);}
+}
+
+.loginpage {
+    background-image: url('../img/Avengers-Logо.png');
+    background-size: 1500px 900px;
+    background-position: center;
+    height: 97vh;
+    display: flex;
+    justify-content: center ;
+    align-items: center;
+}
+
+.require {
+    margin-top: -10px;
+    width: 35vw;
+    height: 70vh;
+}
+
+.contain {
+    background: linear-gradient(to top,rgb(75,39,111), rgb(167,147,240));
+    height: 70vh;
+    opacity: 0.95;
+    box-shadow: 0 0 20px 10px rgb(81, 61, 101);
+    border-bottom: 3px solid red;
+}
+
+.login{
+    color: white;
+    display: flex;
+    width: 35vw;
+    height: 5vw;
+    justify-content: center;
+    font-size: 25px;
+    align-items: center;
+    font-weight: bolder;
+    border-bottom: 1px solid rgb(249,217,97);
+}
+
+.login:hover {
+    animation: change-color;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes change-color {
+    0%  {background: rgb(167,147,240)}
+    2%  {background: linear-gradient(to bottom right, rgb(167,147,240)96%, rgb(75,39,111))}
+    4%  {background: linear-gradient(to bottom right, rgb(167,147,240)92%, rgb(75,39,111))}
+    6%  {background: linear-gradient(to bottom right, rgb(167,147,240)88%, rgb(75,39,111))}
+    8%  {background: linear-gradient(to bottom right, rgb(167,147,240)84%, rgb(75,39,111))}
+    10% {background: linear-gradient(to bottom right, rgb(167,147,240)80%, rgb(75,39,111))}
+    12% {background: linear-gradient(to bottom right, rgb(167,147,240)76%, rgb(75,39,111))}
+    14% {background: linear-gradient(to bottom right, rgb(167,147,240)72%, rgb(75,39,111))}
+    16% {background: linear-gradient(to bottom right, rgb(167,147,240)68%, rgb(75,39,111))}
+    18% {background: linear-gradient(to bottom right, rgb(167,147,240)64%, rgb(75,39,111))}
+    20% {background: linear-gradient(to bottom right, rgb(167,147,240)60%, rgb(75,39,111))}
+    22% {background: linear-gradient(to bottom right, rgb(167,147,240)56%, rgb(75,39,111))}
+    24% {background: linear-gradient(to bottom right, rgb(167,147,240)52%, rgb(75,39,111))}
+    26% {background: linear-gradient(to bottom right, rgb(167,147,240)48%, rgb(75,39,111))}
+    28% {background: linear-gradient(to bottom right, rgb(167,147,240)44%, rgb(75,39,111))}
+    30% {background: linear-gradient(to bottom right, rgb(167,147,240)40%, rgb(75,39,111))}
+    32% {background: linear-gradient(to bottom right, rgb(167,147,240)36%, rgb(75,39,111))}
+    34% {background: linear-gradient(to bottom right, rgb(167,147,240)32%, rgb(75,39,111))}
+    36% {background: linear-gradient(to bottom right, rgb(167,147,240)28%, rgb(75,39,111))}
+    38% {background: linear-gradient(to bottom right, rgb(167,147,240)24%, rgb(75,39,111))}
+    40% {background: linear-gradient(to bottom right, rgb(167,147,240)20%, rgb(75,39,111))}
+    42% {background: linear-gradient(to bottom right, rgb(167,147,240)16%, rgb(75,39,111))}
+    44% {background: linear-gradient(to bottom right, rgb(167,147,240)12%, rgb(75,39,111))}
+    45% {background: linear-gradient(to bottom right, rgb(167,147,240)8%,  rgb(75,39,111))}
+    52% {background: linear-gradient(to bottom right, rgb(75,39,111) 96%, rgb(167,147,240))}
+    54% {background: linear-gradient(to bottom right, rgb(75,39,111) 94%, rgb(167,147,240))}
+    56% {background: linear-gradient(to bottom right, rgb(75,39,111) 90%, rgb(167,147,240))}
+    58% {background: linear-gradient(to bottom right, rgb(75,39,111) 86%, rgb(167,147,240))}
+    60% {background: linear-gradient(to bottom right, rgb(75,39,111) 82%, rgb(167,147,240))}
+    62% {background: linear-gradient(to bottom right, rgb(75,39,111) 78%, rgb(167,147,240))}
+    64% {background: linear-gradient(to bottom right, rgb(75,39,111) 74%, rgb(167,147,240))}
+    66% {background: linear-gradient(to bottom right, rgb(75,39,111) 70%, rgb(167,147,240))}
+    68% {background: linear-gradient(to bottom right, rgb(75,39,111) 66%, rgb(167,147,240))}
+    70% {background: linear-gradient(to bottom right, rgb(75,39,111) 62%, rgb(167,147,240))}
+    72% {background: linear-gradient(to bottom right, rgb(75,39,111) 58%, rgb(167,147,240))}
+    74% {background: linear-gradient(to bottom right, rgb(75,39,111) 54%, rgb(167,147,240))}
+    76% {background: linear-gradient(to bottom right, rgb(75,39,111) 50%, rgb(167,147,240))}
+    78% {background: linear-gradient(to bottom right, rgb(75,39,111) 46%, rgb(167,147,240))}
+    80% {background: linear-gradient(to bottom right, rgb(75,39,111) 42%, rgb(167,147,240))}
+    82% {background: linear-gradient(to bottom right, rgb(75,39,111) 38%, rgb(167,147,240))}
+    84% {background: linear-gradient(to bottom right, rgb(75,39,111) 34%, rgb(167,147,240))}
+    86% {background: linear-gradient(to bottom right, rgb(75,39,111) 30%, rgb(167,147,240))}
+    88% {background: linear-gradient(to bottom right, rgb(75,39,111) 26%, rgb(167,147,240))}
+    90% {background: linear-gradient(to bottom right, rgb(75,39,111) 22%, rgb(167,147,240))}
+    92% {background: linear-gradient(to bottom right, rgb(75,39,111) 18%, rgb(167,147,240))}
+    94% {background: linear-gradient(to bottom right, rgb(75,39,111) 14%, rgb(167,147,240))}
+    96% {background: linear-gradient(to bottom right, rgb(75,39,111) 10%, rgb(167,147,240))}
+    98% {background: linear-gradient(to bottom right, rgb(75,39,111) 6%,  rgb(167,147,240))}
+    99% {background: linear-gradient(to bottom right, rgb(75,39,111) 2%,  rgb(167,147,240))}
+    100% {background: rgb(167,147,240)}
+}
+
+.name {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    height: 40vh;
+}
+
+input {
+    width: 30vw;
+    height: 7vh;
+    background: transparent;
+    border: 1px solid white;
+    border-radius: 5px;
+    outline: none;
+    font-size: 20px;
+    font: 'Roboto Flex', sans-serif;
+    padding: 0 10px;
+    color: white;
+}
+
+label {
+    position: absolute;
+    color: white;
+    font-size: 20px;
+    font-weight: 700;
+    transition: .3s;
+}
+
+.idLabel{
+    top: 30.9vh;
+    left: 35vw;
+}
+
+.label{
+    top: 42.5vh;
+    left: 35vw;
+}
+
+.confirmLabel{
+    top: 54.2vh;
+    left: 35vw;
+}
+
+.firstn{
+    margin-top: 10px;
+    height: 35vh;
+    display: grid;
+}
+
+.button {
+    margin-top: -3.5vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+button {
+    width: 10vw;
+    height: 6vh;
+    cursor: pointer;
+    border-radius: 5px;
+    border: none;
+    font-size: 23px;
+    transition: 0.3s;
+    border: 2px solid rgb(249,217,97);
+}
+
+button:hover {
+    background-color: black;
+    color: white;
+    border: 1px solid red;
+    box-shadow: 0 0 10px 2px rgb(185, 118, 118);
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    margin-top: 4.2vh;
+    height: 7vh;
+}
+
+.logo img {
+    width: 230px;
+}
+
+.foot p {
+    font-size: 12px;
+    color: antiquewhite;
+    cursor: default;
+}
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    background-color: red;
+    width: 100vw;
+    height: 2vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.name p {
+    color: white;
+    cursor: pointer;
+    position: absolute;
+    top: 48.8vh;
+    left: 58vw
+}
+
+.name p:hover{
+    text-decoration: underline;
+}
+
+.log-in{
+    display: flex;
+    width: 35vw;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+.log-in p, .log-in a{
+    color: white;
+    cursor: default;
+}
+
+.log-in a{
+    margin-left: 10px;
+    transition: .3s;
+    cursor: pointer;
+}
+
+.log-in a:hover{
+    transform: scale(1.2);
+}

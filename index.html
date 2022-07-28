@@ -1,0 +1,2771 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marvel Studio Movies</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/e307ccbf7c.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+</head>
+<body>
+    <video autoplay="true" preload="auto" id="myVideo" muted>
+        <source src="/video/marvelintro.mp4" type="video/mp4">
+    </video>
+    <div class="container">
+        <div class="searchPart">
+            <input type="text" id="searchMovie" class="searchMovie" placeholder="" onkeyup="searchUp()">
+        </div>
+
+        <div id="images" class="images">
+            <div class="image-cart" onclick="expandView('1')">
+                    <h4>Avengers: Age of Ultron</h4>
+                    <img src="/img/avengers-age-of-ultron.jpeg" alt="">
+            </div>
+            <div class="image-cart" onclick="expandView('2')">
+                    <h4>Avengers: ENDGAME</h4>
+                    <img src="/img/avengers-endgame.jpg" alt="">
+            </div>
+            <div class="image-cart" onclick="expandView('3')">
+                <h4>Avengers: Infinity War</h4>
+                <img src="/img/avengers-infinity-war.jpg" alt="">
+            </div>    
+            <div class="image-cart" onclick="expandView('4')">
+                <h4>Black Panther</h4>
+                <img src="/img/black panther.jpeg" alt="">
+            </div>
+            <div class="image-cart" onclick="expandView('5')">
+                <h4>Captain America: Civil War</h4>
+                <img src="/img/Captain-America-Civil-war.webp" alt="" data-name = 'captain america civil war'>
+            </div>
+            <div class="image-cart" onclick="expandView('6')">
+                <h4>Captain America:<br> The First Avenger</h4>
+                <img src="/img/captain-america-the-first-avenger.jpeg" alt="" data-name = 'captain america the first avenger'>
+            </div>
+            <div class="image-cart" onclick="expandView('7')">
+                <h4>Captain Marvel</h4>
+                <img src="/img/Captain-marvel.jpeg" alt="" data-name = 'captain marvel'>
+            </div>
+            <div class="image-cart" onclick="expandView('8')">
+                <h4>Doctor Strange:<br> Multiverse of Madness</h4>
+                <img src="/img/Doctor-Strange-2.jpeg" alt="" data-name = 'doctor strange 2'>
+            </div>
+            <div class="image-cart" onclick="expandView('9')">
+                <h4>Guardian of the Galaxy:<br> VOL. 2</h4>
+                <img src="/img/guardians-of-the-galaxy-2.jpeg" alt="" data-name = 'guardian of the galaxy 2'>
+            </div>
+            <div class="image-cart" onclick="expandView('10')">
+                <h4>Ant-man and Wasp</h4>
+                <img src="/img/ant-man-2.jpg" alt="" data-name = 'ant man 2'>
+            </div>
+            <div class="image-cart" onclick="expandView('11')">
+                <h4>Iron Man</h4>
+                <img src="/img/iron-man.jpeg" alt="" data-name = 'ironman'>
+            </div>
+            <div class="image-cart" onclick="expandView('12')">
+                <h4>Spider-man:<br>Far From home</h4>
+                <img src="/img/spiderman far from home.jpg" alt="" data-name = 'spiderman'>
+            </div>
+            <div class="image-cart" onclick="expandView('13')">
+                <h4>Spider-man:<br>Homecoming</h4>
+                <img src="/img/Spider-man-homecoming.webp" alt="" data-name = 'spiderman'>
+            </div>
+            <div class="image-cart" onclick="expandView('14')">
+                <h4>Thor:<br>The Dark World</h4>
+                <img src="/img/Thor 2.webp" alt="" data-name = 'thor 2'>
+            </div>
+            <div class="image-cart" onclick="expandView('15')">
+                <h4>Thor:<br>Ragnarok</h4>
+                <img src="/img/thor-ragnarok-poster.jpeg" alt="" data-name = 'thor ragnarok'>
+            </div>
+            <div class="image-cart" onclick="expandView('16')">
+            <h4>Wanda Vision</h4>
+               <img src="/img/wanda-Vision.jpeg" alt="" data-name = 'wanda vision'>
+            </div>
+            <div class="image-cart" onclick="expandView('17')">
+                <h4>Ant-man</h4>
+                <img src="/img/ant-man.jpg" alt="" data-name = 'antman'>
+            </div>
+            <div class="image-cart" onclick="expandView('18')">
+                <h4>Moon Knight</h4>
+                <img src="/img/moon-knight.jpg" alt="" data-name = 'moon knigt'>
+            </div>
+            <div class="image-cart" onclick="expandView('19')">
+                <h4>Hawkeye</h4>
+                <img src="/img/hawkeye.jpeg" alt="" data-name = 'hawkeye'>
+            </div>
+            <div class="image-cart" onclick="expandView('20')">
+                <h4>Guardians of Galaxy</h4>
+                <img src="/img/guardians of the galaxy.jpg" alt="" data-name = 'guardians of galaxy'>
+            </div>
+            <div class="image-cart" onclick="expandView('21')">
+                <h4>Iron man 2</h4>
+                <img src="/img/iron man 2.jpeg" alt="" data-name = 'ironman'>
+            </div>
+            <div class="image-cart" onclick="expandView('22')">
+                <h4>Iron man 3</h4>
+                <img src="/img/iron man 3.jpg" alt="" data-name = 'ironman3'>
+            </div>
+            <div class="image-cart" onclick="expandView('23')">
+                <h4>Ant-man and WASP:<br>QUANTUMANIA</h4>
+                <img src="/img/ant man and wasp quantumania.jpeg" alt="" data-name = 'antman'>
+            </div>
+            <div class="image-cart" onclick="expandView('24')">
+                <h4>Thor</h4>
+                <img src="/img/thor.jpg" alt="" data-name = 'thor'>
+            </div>
+            <div class="image-cart" onclick="expandView('25')">
+                <h4>Incredible Hulk</h4>
+                <img src="/img/incredible hulk.jpeg" alt="" data-name = 'hulk'>
+            </div>
+            <div class="image-cart" onclick="expandView('26')">
+                <h4>Captain America:<br>The Winter Soldier</h4>
+                <img src="/img/captain america winter soldier.jpg" alt="" data-name = 'guardians of galaxy'>
+            </div>
+            <div class="image-cart" onclick="expandView('27')">
+                <h4>Black Widow</h4>
+                <img src="/img/black-widow.jpeg" alt="" data-name = 'blackwidow'>
+            </div>
+            <div class="image-cart" onclick="expandView('28')">
+                <h4>Doctor Strange</h4>
+                <img src="/img/doctor strange.jpg" alt="" data-name = 'doctorstrange'>
+            </div>
+            <div class="image-cart" onclick="expandView('29')">
+                <h4>Avengers</h4>
+                <img src="/img/avengers.webp" alt="" data-name = 'avengers'>
+            </div>
+            <div class="image-cart" onclick="expandView('30')">
+                <h4>Loki</h4>
+                <img src="/img/loki.jpeg" alt="" data-name = 'loki'>
+            </div>
+            <div class="image-cart" onclick="expandView('31')">
+                <h4>What If...?</h4>
+                <img src="/img/what if.webp" alt="" data-name = 'whatif'>
+            </div>
+            <div class="image-cart" onclick="expandView('32')">
+                <h4>Shangchi:<br>LEGEND OF THE RINGS</h4>
+                <img src="/img/shangchi.jpeg" alt="" data-name = 'shangchi'>
+            </div>
+            <div class="image-cart" onclick="expandView('33')">
+                <h4>The Falcon<br>The Winter Soldier</h4>
+                <img src="/img/the falcon and winter soldier.jpeg" alt="" data-name = 'thefalconandthewintersoldier'>
+            </div>
+            <div class="image-cart" onclick="expandView('34')">
+                <h4>Spider-man:<br>No Way Home</h4>
+                <img src="/img/spider man no way home.jpeg" alt="" data-name = 'spiderman'>
+            </div>
+            <div class="image-cart" onclick="expandView('35')">
+                <h4>Eternals</h4>
+                <img src="/img/Eternals.jpg" alt="" data-name = 'eternals'>
+            </div>
+            <div class="image-cart" onclick="expandView('36')">
+                <h4>Thor:<br>Love and Thunder</h4>
+                <img src="/img/thor love and thunder.jpeg" alt="" data-name = 'thor'>
+            </div>
+            <div class="image-cart" onclick="expandView('37')">
+                <h4>Black Panther:<br>Wakanda Forever</h4>
+                <img src="/img/black panther.jpeg" alt="" data-name = 'blackpanther'>
+            </div>
+            <div class="image-cart" onclick="expandView('38')">
+                <h4>Guardians of the Galaxy:<br>VOL.3</h4>
+                <img src="/img/guardian of the galaxy.jpeg" alt="" data-name = 'guardianofthegalaxy'>
+            </div>
+        </div>
+    </div>
+
+    <div class="buttons">
+        <button class="hideAndShow" onclick="hideAndShow()">
+            <span class="material-symbols-outlined">visibility_off</span>
+        </button>
+        <button class="playpause" onclick="playPause()">
+            <i class="fa-solid fa-circle-stop"></i>
+        </button>
+        <button class="videoSound" onclick="soundChange()">
+            <span class="material-symbols-outlined">volume_up</span>
+        </button>
+    </div>
+
+    <div class="movieDetailsPart">
+        <div class="movieInformationPage" id="movieBox">
+            <div class="movie" data-name="ageofultron">
+                <div class="movieImageCover">
+                    <img src="/img/avengers-age-of-ultron.jpeg" alt="">
+                </div>
+                <div class="details">
+                    <div class="title">
+                        <h1 class="movieTitle">Avengers: Age of Ultron</h1>
+                        <button class="exit" onclick="exitDetail(1)"><strong>X</strong>
+                        </button>
+                    </div>
+                    <div class="story">
+                        <div class="types">
+                            <div class="type">Action</div>
+                            <div class="type">Adventure</div>
+                            <div class="type">Sci-Fi</div>
+                        </div>
+                        <p class="text">When Tony Stark and Bruce Banner try to jump-start a dormant peacekeeping program called Ultron, things go horribly wrong and it's up to Earth's mightiest heroes to stop the villainous Ultron from enacting his terrible plan.</p>
+                    </div>
+                    <div class="casts">
+                        <div class="topCast">Top Casts</div>
+                        <div class="roles">
+                            <div class="role1">
+                                <h5 class="roleName">Robert Downey Jr</h5>
+                                <h6 class="role">as Tony stark (Iron Man)</h6>
+                                <div class="imageRole">
+                                    <img src="/roleimg/Robert Downey Jr.jpg" alt="" class="roleImage">
+                                </div>
+                            </div>
+                            <div class="role1">
+                                <h5 class="roleName">Chris Evans</h5>
+                                <h6 class="role">Captain America</h6>
+                                <div class="imageRole">
+                                    <img src="/roleimg/Chris Evans.jpg" alt="" class="roleImage">
+                                </div>
+                            </div>
+                            <div class="role1">
+                                <h5 class="roleName">Mark Ruffalo</h5>
+                                <h6 class="role">Hulk</h6>
+                                <div class="imageRole">
+                                    <img src="/roleimg/Mark Ruffalo.jpg" alt="" class="roleImage">
+                                </div>
+                            </div>
+                            <div class="role1">
+                                <h5 class="roleName">Chris Hemsworth</h5>
+                                <h6 class="role">Thor</h6>
+                                <div class="imageRole">
+                                    <img src="/roleimg/Chris Hemsworth.jpg" alt="" class="roleImage">
+                                </div>
+                            </div>
+                            <div class="role1">
+                                <h5 class="roleName">Scarlet Johansson</h5>
+                                <h6 class="role">Captain America</h6>
+                                <div class="imageRole">
+                                    <img src="/roleimg/Black widow.jpg" alt="" class="roleImage">
+                                </div>
+                            </div>
+                            <div class="role1">
+                                <h5 class="roleName">Jeremy Renner</h5>
+                                <h6 class="role">Hawkeye</h6>
+                                <div class="imageRole">
+                                    <img src="/roleimg/hawkeye.jpg" alt="" class="roleImage">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="trailerVideoBox">
+                        <div class="trailer">Trailer</div>
+                        <iframe class="youtubeTrailer" width="774" height="437" src="https://www.youtube.com/embed/gynepq7JEhU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <div class="watchMovie">
+                        <div class="watch">Watch The Movie in English</div>
+                        <div class="fullMovie">
+                           <a href="/html/watchMovies/1Ageofultron.html">If you want watch a full movie. <span>Click on me</span>. Only original english version available.</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="movie" data-name="endgame">
+                <div class="movieImageCover">
+                    <img src="/img/avengers-endgame.jpg" alt="">
+                </div>
+                <div class="details">
+                    <div class="title">
+                        <h1 class="movieTitle">Avengers: ENDGAME</h1>
+                        <button class="exit" onclick="exitDetail(2)"><strong>X</strong>
+                        </button>
+                    </div>
+                    <div class="story">
+                        <div class="types">
+                            <div class="type">Action</div>
+                            <div class="type">Adventure</div>
+                            <div class="type">Drama</div>
+                        </div>
+                        <p class="text">After the devastating events of Avengers: Infinity War (2018), the universe is in ruins. With the help of remaining allies, the Avengers assemble once more in order to reverse Thanos' actions and restore balance to the universe.</p>
+                    </div>
+                    <div class="casts">
+                        <div class="topCast">Top Casts</div>
+                        <div class="roles">
+                            <div class="role1">
+                                <h5 class="roleName">Robert Downey Jr</h5>
+                                <h6 class="role">as Tony stark (Iron Man)</h6>
+                                <div class="imageRole">
+                                    <img src="/roleimg/Robert Downey Jr.jpg" alt="" class="roleImage">
+                                </div>
+                            </div>
+                            <div class="role1">
+                                <h5 class="roleName">Chris Evans</h5>
+                                <h6 class="role">Captain America</h6>
+                                <div class="imageRole">
+                                    <img src="/roleimg/Chris Evans.jpg" alt="" class="roleImage">
+                                </div>
+                            </div>
+                            <div class="role1">
+                                <h5 class="roleName">Mark Ruffalo</h5>
+                                <h6 class="role">Hulk</h6>
+                                <div class="imageRole">
+                                    <img src="/roleimg/Mark Ruffalo.jpg" alt="" class="roleImage">
+                                </div>
+                            </div>
+                            <div class="role1">
+                                <h5 class="roleName">Chris Hemsworth</h5>
+                                <h6 class="role">Thor</h6>
+                                <div class="imageRole">
+                                    <img src="/roleimg/Chris Hemsworth.jpg" alt="" class="roleImage">
+                                </div>
+                            </div>
+                            <div class="role1">
+                                <h5 class="roleName">Scarlet Johansson</h5>
+                                <h6 class="role">Captain America</h6>
+                                <div class="imageRole">
+                                    <img src="/roleimg/Black widow.jpg" alt="" class="roleImage">
+                                </div>
+                            </div>
+                            <div class="role1">
+                                <h5 class="roleName">Jeremy Renner</h5>
+                                <h6 class="role">Hawkeye</h6>
+                                <div class="imageRole">
+                                    <img src="/roleimg/hawkeye.jpg" alt="" class="roleImage">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="trailerVideoBox">
+                        <div class="trailer">Trailer</div>
+                        <iframe class="youtubeTrailer" width="774" height="437" src="https://www.youtube.com/embed/TcMBFSGVi1c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <div class="watchMovie">
+                        <div class="watch">Watch The Movie in English</div>
+                        <div class="fullMovie">
+                           <a href="/html/watchMovies/2endgame.html">If you want watch a full movie. <span>Click on me</span>. Only original english version available.</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="movie" data-name="infinitywar">
+                <div class="movieImageCover">
+                    <img src="/img/avengers-infinity-war.jpg" alt="">
+                </div>
+                <div class="details">
+                    <div class="title">
+                        <h1 class="movieTitle">Avengers: Infinity War</h1>
+                        <button class="exit" onclick="exitDetail(3)"><strong>X</strong>
+                        </button>
+                    </div>
+                    <div class="story">
+                        <div class="types">
+                            <div class="type">Action</div>
+                            <div class="type">Adventure</div>
+                            <div class="type">Sci-Fi</div>
+                        </div>
+                        <p class="text">The Avengers and their allies must be willing to sacrifice all in an attempt to defeat the powerful Thanos before his blitz of devastation and ruin puts an end to the universe.</p>
+                    </div>
+                    <div class="casts">
+                        <div class="topCast">Top Casts</div>
+                        <div class="roles">
+                            <div class="role1">
+                                <h5 class="roleName">Robert Downey Jr</h5>
+                                <h6 class="role">as Tony stark (Iron Man)</h6>
+                                <div class="imageRole">
+                                    <img src="/roleimg/Robert Downey Jr.jpg" alt="" class="roleImage">
+                                </div>
+                            </div>
+                            <div class="role1">
+                                <h5 class="roleName">Chris Evans</h5>
+                                <h6 class="role">Captain America</h6>
+                                <div class="imageRole">
+                                    <img src="/roleimg/Chris Evans.jpg" alt="" class="roleImage">
+                                </div>
+                            </div>
+                            <div class="role1">
+                                <h5 class="roleName">Mark Ruffalo</h5>
+                                <h6 class="role">Hulk</h6>
+                                <div class="imageRole">
+                                    <img src="/roleimg/Mark Ruffalo.jpg" alt="" class="roleImage">
+                                </div>
+                            </div>
+                            <div class="role1">
+                                <h5 class="roleName">Chris Hemsworth</h5>
+                                <h6 class="role">Thor</h6>
+                                <div class="imageRole">
+                                    <img src="/roleimg/Chris Hemsworth.jpg" alt="" class="roleImage">
+                                </div>
+                            </div>
+                            <div class="role1">
+                                <h5 class="roleName">Scarlet Johansson</h5>
+                                <h6 class="role">Captain America</h6>
+                                <div class="imageRole">
+                                    <img src="/roleimg/Black widow.jpg" alt="" class="roleImage">
+                                </div>
+                            </div>
+                            <div class="role1">
+                                <h5 class="roleName">Don Cheadle</h5>
+                                <h6 class="role">War Machine</h6>
+                                <div class="imageRole">
+                                    <img src="/roleimg/hawkeye.jpg" alt="" class="roleImage">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="trailerVideoBox">
+                        <div class="trailer">Trailer</div>
+                        <iframe class="youtubeTrailer" width="774" height="437" src="https://www.youtube.com/embed/6ZfuNTqbHE8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <div class="watchMovie">
+                        <div class="watch">Watch The Movie in English</div>
+                        <div class="fullMovie">
+                           <a href="/html/watchMovies/3infinitywar.html">If you want watch a full movie. <span>Click on me</span>. Only original english version available.</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="movie" data-name="blackpanther">
+                <div class="movieImageCover">
+                    <img src="/img/black panther.jpeg" alt="">
+                </div>
+                <div class="details">
+                    <div class="title">
+                        <h1>Black Panther</h1>
+                        <button class="exit" onclick="exitDetail(4)">
+                            <strong>X</strong>
+                        </button>
+                    </div>
+                    <div class="story">
+                        <div class="types">
+                            <div class="type">Action</div>
+                            <div class="type">Adventure</div>
+                            <div class="type">Sci-Fi</div>
+                        </div>
+                        <p class="text">T'Challa, heir to the hidden but advanced kingdom of Wakanda, must step forward to lead his people into a new future and must confront a challenger from his country's past.</p>
+                    </div>
+                    <div class="casts">
+                        <div class="topCast">Top Casts</div>
+                        <div class="roles">
+                            <div class="role1">
+                                <h5 class="roleName">Chadwick Boseman</h5>
+                                <h6 class="role">T'Challa</h6>
+                                <div class="imageRole">
+                                    <img src="/roleimg/chadwick boseman.jpg" alt="" class="roleImage">
+                                </div>
+                            </div>
+                            <div class="role1">
+                                <h5 class="roleName">Micheal B. Jordan</h5>
+                                <h6 class="role">Erik Killmonger</h6>
+                                <div class="imageRole">
+                                    <img src="/roleimg/micheal b jordan.jpg" alt="" class="roleImage">
+                                </div>
+                            </div>
+                            <div class="role1">
+                                <h5 class="roleName">Lupita Nyong'o</h5>
+                                <h6 class="role">Nakia</h6>
+                                <div class="imageRole">
+                                    <img src="/roleimg/lupita.jpg" alt="" class="roleImage">
+                                </div>
+                            </div>
+                            <div class="role1">
+                                <h5 class="roleName">Dania Gurira</h5>
+                                <h6 class="role">Okoye</h6>
+                                <div class="imageRole">
+                                    <img src="/roleimg/danai.jpg" alt="" class="roleImage">
+                                </div>
+                            </div>
+                            <div class="role1">
+                                <h5 class="roleName">Martin Freeman</h5>
+                                <h6 class="role">Everest K. Ross</h6>
+                                <div class="imageRole">
+                                    <img src="/roleimg/martin freeman.jpg" alt="" class="roleImage">
+                                </div>
+                            </div>
+                            <div class="role1">
+                                <h5 class="roleName">Daniel Kaluuya</h5>
+                                <h6 class="role">W'Kabi</h6>
+                                <div class="imageRole">
+                                    <img src="/roleimg/Daniel Kayuuba.jpg" alt="" class="roleImage">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="trailerVideoBox">
+                        <div class="trailer">Trailer</div>
+                        <iframe class="youtubeTrailer" width="770" height="440" src="https://www.youtube.com/embed/xjDjIWPwcPU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <div class="watchMovie">
+                        <div class="watch">Watch The Movie in English</div>
+                        <div class="fullMovie">
+                           <a href="/html/watchMovies/4blackpanther.html">If you want watch a full movie. <span>Click on me</span>. Only original english version available.</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="movie" data-name="civilwar">
+                <div class="movieImageCover">
+                    <img src="/img/Captain-America-Civil-war.webp" alt="">
+                </div>
+                <div class="details">
+                    <div class="title">
+                        <h1>Captain America: Civil War</h1>
+                        <button class="exit" onclick="exitDetail(5)">
+                            <strong>X</strong>
+                        </button>
+                    </div>
+                    <div class="story">
+                        <div class="types">
+                            <div class="type">Action</div>
+                            <div class="type">Adventure</div>
+                            <div class="type">Sci-Fi</div>
+                        </div>
+                        <p class="text">Political involvement in the Avengers' affairs causes a rift between Captain America and Iron Man.</p>
+                    </div>
+                    <div class="casts">
+                        <div class="topCast">Top Casts</div>
+                        <div class="roles">
+                            <div class="role1">
+                                <h5 class="roleName">Chris Evans</h5>
+                                <h6 class="role">Captain America</h6>
+                                <div class="imageRole">
+                                    <img src="/roleimg/Chris Evans.jpg" alt="" class="roleImage">
+                                </div>
+                            </div>
+                            <div class="role1">
+                                <h5 class="roleName">Robert Downey Jr.</h5>
+                                <h6 class="role">Iron Man</h6>
+                                <div class="imageRole">
+                                    <img src="/roleimg/Robert Downey Jr.jpg" alt="" class="roleImage">
+                                </div>
+                            </div>
+                            <div class="role1">
+                                <h5 class="roleName">Scarlet Johansson</h5>
+                                <h6 class="role">Black Widow</h6>
+                                <div class="imageRole">
+                                    <img src="/roleimg/Black widow.jpg" alt="" class="roleImage">
+                                </div>
+                            </div>
+                            <div class="role1">
+                                <h5 class="roleName">Sebastian Stan</h5>
+                                <h6 class="role">Bucky Barnes</h6>
+                                <div class="imageRole">
+                                    <img src="/roleimg/Sebastian Stan.jpg" alt="" class="roleImage">
+                                </div>
+                            </div>
+                            <div class="role1">
+                                <h5 class="roleName">Anthony Mackie</h5>
+                                <h6 class="role">Sam Wilson</h6>
+                                <div class="imageRole">
+                                    <img src="/roleimg/Anthony Mackie.jpg" alt="" class="roleImage">
+                                </div>
+                            </div>
+                            <div class="role1">
+                                <h5 class="roleName">Don Cheadle</h5>
+                                <h6 class="role">War Machine</h6>
+                                <div class="imageRole">
+                                    <img src="/roleimg/Don Ceadle.jpg" alt="" class="roleImage">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="trailerVideoBox">
+                        <div class="trailer">Trailer</div>
+                        <iframe class="youtubeTrailer" width="770" height="440" src="https://www.youtube.com/embed/dKrVegVI0Us" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <div class="watchMovie">
+                        <div class="watch">Watch The Movie in English</div>
+                        <div class="fullMovie">
+                           <a href="/html/watchMovies/5civilwar.html">If you want watch a full movie. <span>Click on me</span>. Only original english version available.</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="movie" data-name="captianamerica">
+                <div class="movieImageCover">
+                    <img src="/img/captain-america-the-first-avenger.jpeg" alt="">
+                </div>
+                <div class="details">
+                    <div class="title">
+                        <h1>Captain America: The First Avenger</h1>
+                        <button class="exit" onclick="exitDetail(6)">
+                            <strong>X</strong>
+                        </button>
+                    </div>
+                    <div class="story">
+                        <div class="types">
+                            <div class="type">Action</div>
+                            <div class="type">Adventure</div>
+                            <div class="type">Sci-Fi</div>
+                        </div>
+                        <p class="text">Steve Rogers, a rejected military soldier, transforms into Captain America after taking a dose of a "Super-Soldier serum". But being Captain America comes at a price as he attempts to take down a warmonger and a terrorist organization.</p>
+                    </div>
+                    <div class="casts">
+                        <div class="topCast">Top Casts</div>
+                        <div class="roles">
+                            <div class="role1">
+                                <h5 class="roleName">Chris Evans</h5>
+                                <h6 class="role">Captain America</h6>
+                                <div class="imageRole">
+                                    <img src="..\roleimg\Chris Evans.jpg" alt="" class="roleImage">
+                                </div>
+                            </div>
+                            <div class="role1">
+                                <h5 class="roleName">Hugo Weaving</h5>
+                                <h6 class="role">Red Skull</h6>
+                                <div class="imageRole">
+                                    <img src="..\roleimg\Hugo Weaving.jpg" alt="" class="roleImage">
+                                </div>
+                            </div>
+                            <div class="role1">
+                                <h5 class="roleName">Hayley Atwell</h5>
+                                <h6 class="role">Peggy Carter</h6>
+                                <div class="imageRole">
+                                    <img src="..\roleimg\Hayley Atwell.jpg" alt="" class="roleImage">
+                                </div>
+                            </div>
+                            <div class="role1">
+                                <h5 class="roleName">Sebastian Stan</h5>
+                                <h6 class="role">Bucky Barnes</h6>
+                                <div class="imageRole">
+                                    <img src="..\roleimg\Sebastian Stan.jpg" alt="" class="roleImage">
+                                </div>
+                            </div>
+                            <div class="role1">
+                                <h5 class="roleName">Tommy Lee Jones</h5>
+                                <h6 class="role">Colonel Chestar Phillips</h6>
+                                <div class="imageRole">
+                                    <img src="..\roleimg\tommy lee.jpg" alt="" class="roleImage">
+                                </div>
+                            </div>
+                            <div class="role1">
+                                <h5 class="roleName">Dominic Cooper</h5>
+                                <h6 class="role">Howard Stark</h6>
+                                <div class="imageRole">
+                                    <img src="..\roleimg\dominic cooper.jpg" alt="" class="roleImage">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="trailerVideoBox">
+                        <div class="trailer">Trailer</div>
+                        <iframe class="youtubeTrailer" width="770" height="440" src="https://www.youtube.com/embed/qi5UTD7kEr0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <div class="watchMovie">
+                        <div class="watch">Watch The Movie in English</div>
+                        <div class="fullMovie">
+                            <a href="/html/watchMovies/6thefirstavenger.html">If you want watch a full movie. <span>Click on me</span>. Only original english version available.</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="movie" data-name="captainmarvel">
+                <div class="movieImageCover">
+                    <img src="..\img\Captain-marvel.jpeg" alt="">
+                </div>
+                <div class="details">
+                    <div class="title">
+                        <h1>Captain Marvel</h1>
+                        <button class="exit" onclick="exitDetail(7)">
+                            <strong>X</strong>
+                        </button>
+                    </div>
+                    <div class="story">
+                        <div class="types">
+                            <div class="type">Action</div>
+                            <div class="type">Adventure</div>
+                            <div class="type">Sci-Fi</div>
+                        </div>
+                        <p class="text">Carol Danvers becomes one of the universe's most powerful heroes when Earth is caught in the middle of a galactic war between two alien races.</p>
+                    </div>
+                    <div class="casts">
+                        <div class="topCast">Top Casts</div>
+                        <div class="roles">
+                            <div class="role1">
+                                <h5 class="roleName">Brie Larson</h5>
+                                <h6 class="role">Captain Marvel</h6>
+                                <div class="imageRole">
+                                    <img src="..\roleimg\Brie Larson.jpg" alt="" class="roleImage">
+                                </div>
+                            </div>
+                            <div class="role1">
+                                <h5 class="roleName">Samuel L. Jackson</h5>
+                                <h6 class="role">Nick Fury</h6>
+                                <div class="imageRole">
+                                    <img src="..\roleimg\Samuel L. Jackson.jpg" alt="" class="roleImage">
+                                </div>
+                            </div>
+                            <div class="role1">
+                                <h5 class="roleName">Ben Mendelson</h5>
+                                <h6 class="role">Talos</h6>
+                                <div class="imageRole">
+                                    <img src="..\roleimg\Ben Mendelson.jpg" alt="" class="roleImage">
+                                </div>
+                            </div>
+                            <div class="role1">
+                                <h5 class="roleName">Jude Law</h5>
+                                <h6 class="role">Yon-Rogg</h6>
+                                <div class="imageRole">
+                                    <img src="..\roleimg\Jude Law.jpg" alt="" class="roleImage">
+                                </div>
+                            </div>
+                            <div class="role1">
+                                <h5 class="roleName">Annete Bening</h5>
+                                <h6 class="role">Superior Intellegence</h6>
+                                <div class="imageRole">
+                                    <img src="..\roleimg\Annette Benning.jpg" alt="" class="roleImage">
+                                </div>
+                            </div>
+                            <div class="role1">
+                                <h5 class="roleName">Lashana Lynch</h5>
+                                <h6 class="role">Maria Rambeau</h6>
+                                <div class="imageRole">
+                                    <img src="..\roleimg\Lashana Lynch.jpg" alt="" class="roleImage">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="trailerVideoBox">
+                        <div class="trailer">Trailer</div>
+                        <iframe class="youtubeTrailer" width="770" height="440" src="https://www.youtube.com/embed/0LHxvxdRnYc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <div class="watchMovie">
+                        <div class="watch">Watch The Movie in English</div>
+                        <div class="fullMovie">
+                            <a href="/html/watchMovies/7captainmarvel.html">If you want watch a full movie. <span>Click on me</span>. Only original english version available.</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="movie" data-name="multiverse">
+                <div class="movieImageCover">
+                    <img src="/img/Doctor-Strange-2.jpeg" alt="">
+                </div>
+                <div class="details">
+                    <div class="title">
+                        <h1>Doctor Strange: Multiverse of Madness</h1>
+                        <button class="exit" onclick="exitDetail(8)">
+                            <strong>X</strong>
+                        </button>
+                    </div>
+                    <div class="story">
+                        <div class="types">
+                            <div class="type">Action</div>
+                            <div class="type">Adventure</div>
+                            <div class="type">Fantasy</div>
+                        </div>
+                        <p class="text">Doctor Strange teams up with a mysterious teenage girl from his dreams who can travel across multiverses, to battle multiple threats, including other-universe versions of himself, which threaten to wipe out millions across the multiverse. They seek help from Wanda the Scarlet Witch, Wong and others.</p>
+                    </div>
+                    <div class="casts">
+                        <div class="topCast">Top Casts</div>
+                        <div class="roles">
+                            <div class="role1">
+                                <h5 class="roleName">BenedictCumberbatch</h5>
+                                <h6 class="role">Doctor Stephen Strange</h6>
+                                <div class="imageRole">
+                                    <img src="..\roleimg\Doctor Stephen Strange.jpg" alt="" class="roleImage">
+                                </div>
+                            </div>
+                            <div class="role1">
+                                <h5 class="roleName">Elizabeth Olsen</h5>
+                                <h6 class="role">Wanda</h6>
+                                <div class="imageRole">
+                                    <img src="..\roleimg\Elizabeth Olsen.jpg" alt="" class="roleImage">
+                                </div>
+                            </div>
+                            <div class="role1">
+                                <h5 class="roleName">Benedict Wong</h5>
+                                <h6 class="role">Wong</h6>
+                                <div class="imageRole">
+                                    <img src="..\roleimg\Wong.jpg" alt="" class="roleImage">
+                                </div>
+                            </div>
+                            <div class="role1">
+                                <h5 class="roleName">Xochitl Gomez</h5>
+                                <h6 class="role">America Chavez</h6>
+                                <div class="imageRole">
+                                    <img src="..\roleimg\Xochitl Gomez.jpg" alt="" class="roleImage">
+                                </div>
+                            </div>
+                            <div class="role1">
+                                <h5 class="roleName">Rachel McAdams</h5>
+                                <h6 class="role">Dr. Christine Palmer</h6>
+                                <div class="imageRole">
+                                    <img src="..\roleimg\Rachel McAdams.jpg" alt="" class="roleImage">
+                                </div>
+                            </div>
+                            <div class="role1">
+                                <h5 class="roleName">Chiwetel Ejiofor</h5>
+                                <h6 class="role">Baron Mordo</h6>
+                                <div class="imageRole">
+                                    <img src="..\roleimg\Chiwetel Ejiofor.jpg" alt="" class="roleImage">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="trailerVideoBox">
+                        <div class="trailer">Trailer</div>
+                        <iframe class="youtubeTrailer" width="770" height="440" src="https://www.youtube.com/embed/aWzlQ2N6qqg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <div class="watchMovie">
+                        <div class="watch">Watch The Movie in English</div>
+                        <div class="fullMovie">
+                            <a href="/html/watchMovies/8multiversemadness.html">If you want watch a full movie. <span>Click on me</span>. Only original english version available.</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="movie" data-name="guardiansofthegalaxy2">
+                <div class="movieImageCover">
+                    <img src="/img/guardians-of-the-galaxy-2.jpeg" alt="">
+                </div>
+                <div class="details">
+                    <div class="title">
+                        <h1>Guardians of the Galaxy: VOL.2</h1>
+                        <button class="exit" onclick="exitDetail(9)">
+                            <strong>X</strong>
+                        </button>
+                    </div>
+                    <div class="story">
+                        <div class="types">
+                            <div class="type">Action</div>
+                            <div class="type">Adventure</div>
+                            <div class="type">Comedy</div>
+                        </div>
+                        <p class="text">The Guardians struggle to keep together as a team while dealing with their personal family issues, notably Star-Lord's encounter with his father the ambitious celestial being Ego.</p>
+                    </div>
+                    <div class="casts">
+                        <div class="topCast">Top Casts</div>
+                        <div class="roles">
+                            <div class="role1">
+                                <h5 class="roleName">Chris Pratt</h5>
+                                <h6 class="role">Star Lord</h6>
+                                <div class="imageRole">
+                                    <img src="..\roleimg\GOG2\Chris Pratt.jpg" alt="" class="roleImage">
+                                </div>
+                            </div>
+                            <div class="role1">
+                                <h5 class="roleName">Zoe Saldana</h5>
+                                <h6 class="role">Gamora</h6>
+                                <div class="imageRole">
+                                    <img src="..\roleimg\GOG2\Zoe Saldana.jpg" alt="" class="roleImage">
+                                </div>
+                            </div>
+                            <div class="role1">
+                                <h5 class="roleName">Dave Bautista</h5>
+                                <h6 class="role">Drax</h6>
+                                <div class="imageRole">
+                                    <img src="..\roleimg\GOG2\Dave Bautista.jpg" alt="" class="roleImage">
+                                </div>
+                            </div>
+                            <div class="role1">
+                                <h5 class="roleName">Vin Diesel</h5>
+                                <h6 class="role">Groot(Voice)</h6>
+                                <div class="imageRole">
+                                    <img src="..\roleimg\GOG2\Vin Diesel.jpg" alt="" class="roleImage">
+                                </div>
+                            </div>
+                            <div class="role1">
+                                <h5 class="roleName">Bradley Cooper</h5>
+                                <h6 class="role">Rocket(Voice)</h6>
+                                <div class="imageRole">
+                                    <img src="..\roleimg\GOG2\Bradley Cooper.jpg" alt="" class="roleImage">
+                                </div>
+                            </div>
+                            <div class="role1">
+                                <h5 class="roleName">Michael Rooker</h5>
+                                <h6 class="role">Yondu</h6>
+                                <div class="imageRole">
+                                    <img src="..\roleimg\GOG2\Michael Rooke.jpg" alt="" class="roleImage">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="trailerVideoBox">
+                        <div class="trailer">Trailer</div>
+                        <iframe class="youtubeTrailer" width="770" height="440" src="https://www.youtube.com/embed/wUn05hdkhjM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <div class="watchMovie">
+                        <div class="watch">Watch The Movie in English</div>
+                        <div class="fullMovie">
+                            <a href="/html/watchMovies/9guardiansofthegalaxy2.html">If you want watch a full movie. <span>Click on me</span>. Only original english version available.</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="movie" data-name="antman2">
+                <div class="movieImageCover">
+                    <img src="/img/ant-man-2.jpg" alt="">
+                </div>
+                <div class="details">
+                    <div class="title">
+                        <h1>Ant-man and Wasp</h1>
+                        <button class="exit" onclick="exitDetail(10)">
+                            <strong>X</strong>
+                        </button>
+                    </div>
+                    <div class="story">
+                        <div class="types">
+                            <div class="type">Action</div>
+                            <div class="type">Adventure</div>
+                            <div class="type">Comedy</div>
+                        </div>
+                        <p class="text">As Scott Lang balances being both a superhero and a father, Hope van Dyne and Dr. Hank Pym present an urgent new mission that finds the Ant-Man fighting alongside The Wasp to uncover secrets from their past.</p>
+                    </div>
+                    <div class="casts">
+                        <div class="topCast">Top Casts</div>
+                        <div class="roles">
+                            <div class="role1">
+                                <h5 class="roleName">Paul Rudd</h5>
+                                <h6 class="role">Ant-man</h6>
+                                <div class="imageRole">
+                                    <img src="..\roleimg\AW\Paul Rudd.jpg" alt="" class="roleImage">
+                                </div>
+                            </div>
+                            <div class="role1">
+                                <h5 class="roleName">Evangeline Lilly</h5>
+                                <h6 class="role">Wasp</h6>
+                                <div class="imageRole">
+                                    <img src="..\roleimg\AW\Evangeline Lilly.jpg" alt="" class="roleImage">
+                                </div>
+                            </div>
+                            <div class="role1">
+                                <h5 class="roleName">Michael Peña</h5>
+                                <h6 class="role">Luis</h6>
+                                <div class="imageRole">
+                                    <img src="..\roleimg\AW\Michael Peña.jpg" alt="" class="roleImage">
+                                </div>
+                            </div>
+                            <div class="role1">
+                                <h5 class="roleName">Hannah John-Kamen</h5>
+                                <h6 class="role">Ava, Ghost</h6>
+                                <div class="imageRole">
+                                    <img src="..\roleimg\AW\Hannah John-Kamen.jpg" alt="" class="roleImage">
+                                </div>
+                            </div>
+                            <div class="role1">
+                                <h5 class="roleName">Laurence Fishburne</h5>
+                                <h6 class="role">Dr. Bill Foster</h6>
+                                <div class="imageRole">
+                                    <img src="..\roleimg\AW\Laurence Fishburne.jpg" alt="" class="roleImage">
+                                </div>
+                            </div>
+                            <div class="role1">
+                                <h5 class="roleName">Michael Douglas</h5>
+                                <h6 class="role">Dr.Hynk Pym</h6>
+                                <div class="imageRole">
+                                    <img src="..\roleimg\AW\Michael Douglas.jpg" alt="" class="roleImage">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="trailerVideoBox">
+                        <div class="trailer">Trailer</div>
+                        <iframe class="youtubeTrailer" width="770" height="440" src="https://www.youtube.com/embed/UUkn-enk2RU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <div class="watchMovie">
+                        <div class="watch">Watch The Movie in English</div>
+                        <div class="fullMovie">
+                            <a href="/html/watchMovies/10antman2.html">If you want watch a full movie. <span>Click on me</span>. Only original english version available.</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="movie" data-name="ironman">
+                <div class="movieImageCover">
+                    <img src="/img/iron-man.jpeg" alt="">
+                </div>
+                <div class="details">
+                    <div class="title">
+                        <h1>Iron Man</h1>
+                        <button class="exit" onclick="exitDetail(11)">
+                            <strong>X</strong>
+                        </button>
+                    </div>
+                    <div class="story">
+                        <div class="types">
+                            <div class="type">Action</div>
+                            <div class="type">Adventure</div>
+                            <div class="type">Sci-Fi</div>
+                        </div>
+                        <p class="text">After being held captive in an Afghan cave, billionaire engineer Tony Stark creates a unique weaponized suit of armor to fight evil.</p>
+                    </div>
+                    <div class="casts">
+                        <div class="topCast">Top Casts</div>
+                        <div class="roles">
+                            <div class="role1">
+                                <h5 class="roleName">Robert Downey Jr.</h5>
+                                <h6 class="role">Iron Man</h6>
+                                <div class="imageRole">
+                                    <img src="..\roleimg\Robert Downey Jr.jpg" alt="" class="roleImage">
+                                </div>
+                            </div>
+                            <div class="role1">
+                                <h5 class="roleName">Gwyneth Paltrow</h5>
+                                <h6 class="role">Pepper Potts</h6>
+                                <div class="imageRole">
+                                    <img src="..\roleimg\IM\Gwyneth Paltrow.jpg" alt="" class="roleImage">
+                                </div>
+                            </div>
+                            <div class="role1">
+                                <h5 class="roleName">Terrence Howard</h5>
+                                <h6 class="role">Rhodey</h6>
+                                <div class="imageRole">
+                                    <img src="..\roleimg\IM\Terrence Howard.jpg" alt="" class="roleImage">
+                                </div>
+                            </div>
+                            <div class="role1">
+                                <h5 class="roleName">Jeff Bridges</h5>
+                                <h6 class="role">Obadiah Stane</h6>
+                                <div class="imageRole">
+                                    <img src="..\roleimg\IM\Jeff Bridges.jpg" alt="" class="roleImage">
+                                </div>
+                            </div>
+                            <div class="role1">
+                                <h5 class="roleName">Shaun Toub</h5>
+                                <h6 class="role">Yinsen</h6>
+                                <div class="imageRole">
+                                    <img src="..\roleimg\IM\Shaun Toub.jpg" alt="" class="roleImage">
+                                </div>
+                            </div>
+                            <div class="role1">
+                                <h5 class="roleName">Jon Favreau</h5>
+                                <h6 class="role">Hogan</h6>
+                                <div class="imageRole">
+                                    <img src="..\roleimg\IM\Jon Favreau.jpg" alt="" class="roleImage">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="trailerVideoBox">
+                        <div class="trailer">Trailer</div>
+                        <iframe class="youtubeTrailer" width="770" height="440" src="https://www.youtube.com/embed/8ugaeA-nMTc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <div class="watchMovie">
+                        <div class="watch">Watch The Movie in English</div>
+                        <div class="fullMovie">
+                            <a href="/html/watchMovies/11ironman.html">If you want watch a full movie. <span>Click on me</span>. Only original english version available.</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="movie" data-name="farfromhome">
+                <div class="movieImageCover">
+                    <img src="/img/spiderman far from home.jpg" alt="">
+                </div>
+                <div class="details">
+                    <div class="title">
+                        <h1>Spider-man: Far From Home</h1>
+                        <button class="exit" onclick="exitDetail(12)">
+                            <strong>X</strong>
+                        </button>
+                    </div>
+                    <div class="story">
+                        <div class="types">
+                            <div class="type">Action</div>
+                            <div class="type">Adventure</div>
+                            <div class="type">Sci-Fi</div>
+                        </div>
+                        <p class="text">Following the events of Avengers: Endgame (2019), Spider-Man must step up to take on new threats in a world that has changed forever.</p>
+                    </div>
+                    <div class="casts">
+                        <div class="topCast">Top Casts</div>
+                        <div class="roles">
+                            <div class="role1">
+                                <h5 class="roleName">Tom Holland</h5>
+                                <h6 class="role">Spider-Man</h6>
+                                <div class="imageRole">
+                                    <img src="..\roleimg\Spiderman\Tom Holland.jpg" alt="" class="roleImage">
+                                </div>
+                            </div>
+                            <div class="role1">
+                                <h5 class="roleName">Samuel L. Jackson</h5>
+                                <h6 class="role">Nick Fury</h6>
+                                <div class="imageRole">
+                                    <img src="..\roleimg\Samuel L. Jackson.jpg" alt="" class="roleImage">
+                                </div>
+                            </div>
+                            <div class="role1">
+                                <h5 class="roleName">Jake Gyllenhaal</h5>
+                                <h6 class="role">Mysterio</h6>
+                                <div class="imageRole">
+                                    <img src="..\roleimg\Spiderman\Jake Gyllenhaal.jpg" alt="" class="roleImage">
+                                </div>
+                            </div>
+                            <div class="role1">
+                                <h5 class="roleName">Jon Favreau</h5>
+                                <h6 class="role">Happy Hogan</h6>
+                                <div class="imageRole">
+                                    <img src="..\roleimg\Spiderman\Jon Favreau.jpg" alt="" class="roleImage">
+                                </div>
+                            </div>
+                            <div class="role1">
+                                <h5 class="roleName">Zendaya</h5>
+                                <h6 class="role">MJ</h6>
+                                <div class="imageRole">
+                                    <img src="..\roleimg\Spiderman\Zendaya.jpeg" alt="" class="roleImage">
+                                </div>
+                            </div>
+                            <div class="role1">
+                                <h5 class="roleName">Jacob Batalon</h5>
+                                <h6 class="role">Ned Leeds</h6>
+                                <div class="imageRole">
+                                    <img src="..\roleimg\Spiderman\Jacob Batalon.jpg" alt="" class="roleImage">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="trailerVideoBox">
+                        <div class="trailer">Trailer</div>
+                        <iframe class="youtubeTrailer" width="770" height="440" src="https://www.youtube.com/embed/Nt9L1jCKGnE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <div class="watchMovie">
+                        <div class="watch">Watch The Movie in English</div>
+                        <div class="fullMovie">
+                            <a href="/html/watchMovies/12spidermanfarfromhome.html">If you want watch a full movie. <span>Click on me</span>. Only original english version available.</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="movie" data-name="homecoming">
+                <div class="movieImageCover">
+                    <img src="/img/Spider-man-homecoming.webp" alt="">
+                </div>
+                <div class="details">
+                    <div class="title">
+                        <h1>Spider-man: Homecoming</h1>
+                        <button class="exit" onclick="exitDetail(13)">
+                            <strong>X</strong>
+                        </button>
+                    </div>
+                    <div class="story">
+                        <div class="types">
+                            <div class="type">Action</div>
+                            <div class="type">Adventure</div>
+                            <div class="type">Sci-Fi</div>
+                        </div>
+                        <p class="text">Peter Parker balances his life as an ordinary high school student in Queens with his superhero alter-ego Spider-Man, and finds himself on the trail of a new menace prowling the skies of New York City.</p>
+                    </div>
+                    <div class="casts">
+                        <div class="topCast">Top Casts</div>
+                        <div class="roles">
+                            <div class="role1">
+                                <h5 class="roleName">Tom Holland</h5>
+                                <h6 class="role">Spider-Man</h6>
+                                <div class="imageRole">
+                                    <img src="..\roleimg\Spiderman\Tom Holland.jpg" alt="" class="roleImage">
+                                </div>
+                            </div>
+                            <div class="role1">
+                                <h5 class="roleName">Robert Downey Jr.</h5>
+                                <h6 class="role">Iron Man</h6>
+                                <div class="imageRole">
+                                    <img src="..\roleimg\Robert Downey Jr.jpg" alt="" class="roleImage">
+                                </div>
+                            </div>
+                            <div class="role1">
+                                <h5 class="roleName">Michael Keaton</h5>
+                                <h6 class="role">Adrian Toomes</h6>
+                                <div class="imageRole">
+                                    <img src="..\roleimg\Spiderman\Michael Keaton.jpg" alt="" class="roleImage">
+                                </div>
+                            </div>
+                            <div class="role1">
+                                <h5 class="roleName">Jon Favreau</h5>
+                                <h6 class="role">Happy Hogan</h6>
+                                <div class="imageRole">
+                                    <img src="..\roleimg\Spiderman\Jon Favreau.jpg" alt="" class="roleImage">
+                                </div>
+                            </div>
+                            <div class="role1">
+                                <h5 class="roleName">Laura Harrier</h5>
+                                <h6 class="role">Liz</h6>
+                                <div class="imageRole">
+                                    <img src="..\roleimg\Spiderman\Laura Harrier.jpg" alt="" class="roleImage">
+                                </div>
+                            </div>
+                            <div class="role1">
+                                <h5 class="roleName">Jacob Batalon</h5>
+                                <h6 class="role">Ned Leeds</h6>
+                                <div class="imageRole">
+                                    <img src="..\roleimg\Spiderman\Jacob Batalon.jpg" alt="" class="roleImage">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="trailerVideoBox">
+                        <div class="trailer">Trailer</div>
+                        <iframe class="youtubeTrailer" width="770" height="440" src="https://www.youtube.com/embed/39udgGPyYMg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <div class="watchMovie">
+                        <div class="watch">Watch The Movie in English</div>
+                        <div class="fullMovie">
+                            <a href="/html/watchMovies/13spidermanhomecoming.html">If you want watch a full movie. <span>Click on me</span>. Only original english version available.</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="movie" data-name="thor2">
+                <div class="movieImageCover">
+                    <img src="/img/Thor 2.webp" alt="">
+                </div>
+                <div class="details">
+                    <div class="title">
+                        <h1>Thor: The Dark World</h1>
+                        <button class="exit" onclick="exitDetail(14)">
+                            <strong>X</strong>
+                        </button>
+                    </div>
+                    <div class="story">
+                        <div class="types">
+                            <div class="type">Action</div>
+                            <div class="type">Adventure</div>
+                            <div class="type">Fantasy</div>
+                        </div>
+                        <p class="text">When the Dark Elves attempt to plunge the universe into darkness, Thor must embark on a perilous and personal journey that will reunite him with doctor Jane Foster.</p>
+                    </div>
+                    <div class="casts">
+                        <div class="topCast">Top Casts</div>
+                        <div class="roles">
+                            <div class="role1">
+                                <h5 class="roleName">Chris Hemsworth</h5>
+                                <h6 class="role">Thor</h6>
+                                <div class="imageRole">
+                                    <img src="..\roleimg\Chris Hemsworth.jpg" alt="" class="roleImage">
+                                </div>
+                            </div>
+                            <div class="role1">
+                                <h5 class="roleName">Natalie Portman</h5>
+                                <h6 class="role">Jane Foster</h6>
+                                <div class="imageRole">
+                                    <img src="..\roleimg\Thor\Natalie Portman.jpg" alt="" class="roleImage">
+                                </div>
+                            </div>
+                            <div class="role1">
+                                <h5 class="roleName">Christopher Eccleston</h5>
+                                <h6 class="role">Malekith</h6>
+                                <div class="imageRole">
+                                    <img src="..\roleimg\Thor\Christopher Eccleston.jpg" alt="" class="roleImage">
+                                </div>
+                            </div>
+                            <div class="role1">
+                                <h5 class="roleName">Tom Hiddleston</h5>
+                                <h6 class="role">Loki</h6>
+                                <div class="imageRole">
+                                    <img src="..\roleimg\Thor\Tom Hiddleston.jpg" alt="" class="roleImage">
+                                </div>
+                            </div>
+                            <div class="role1">
+                                <h5 class="roleName">Anthony Hopkins</h5>
+                                <h6 class="role">Odin</h6>
+                                <div class="imageRole">
+                                    <img src="..\roleimg\Thor\Anthony Hopkins.jpg" alt="" class="roleImage">
+                                </div>
+                            </div>
+                            <div class="role1">
+                                <h5 class="roleName">Idris Elba</h5>
+                                <h6 class="role">Heimdall</h6>
+                                <div class="imageRole">
+                                    <img src="..\roleimg\Thor\Idris Elba.jpg" alt="" class="roleImage">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="trailerVideoBox">
+                        <div class="trailer">Trailer</div>
+                        <iframe class="youtubeTrailer" width="770" height="440" src="https://www.youtube.com/embed/npvJ9FTgZbM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <div class="watchMovie">
+                        <div class="watch">Watch The Movie in English</div>
+                        <div class="fullMovie">
+                            <a href="/html/watchMovies/14thor2.html">If you want watch a full movie. <span>Click on me</span>. Only original english version available.</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="movie" data-name="ragnarok">
+                <div class="movieImageCover">
+                    <img src="/img/thor-ragnarok-poster.jpeg" alt="">
+                </div>
+                <div class="details">
+                    <div class="title">
+                        <h1>Thor: Ragnarok</h1>
+                        <button class="exit" onclick="exitDetail(15)">
+                            <strong>X</strong>
+                        </button>
+                    </div>
+                    <div class="story">
+                        <div class="types">
+                            <div class="type">Action</div>
+                            <div class="type">Adventure</div>
+                            <div class="type">Comedy</div>
+                        </div>
+                        <p class="text">Imprisoned on the planet Sakaar, Thor must race against time to return to Asgard and stop Ragnarök, the destruction of his world, at the hands of the powerful and ruthless villain Hela.</p>
+                    </div>
+                    <div class="casts">
+                        <div class="topCast">Top Casts</div>
+                        <div class="roles">
+                            <div class="role1">
+                                <h5 class="roleName">Chris Hemsworth</h5>
+                                <h6 class="role">Thor</h6>
+                                <div class="imageRole">
+                                    <img src="..\roleimg\Chris Hemsworth.jpg" alt="" class="roleImage">
+                                </div>
+                            </div>
+                            <div class="role1">
+                                <h5 class="roleName">Tom Hiddleston</h5>
+                                <h6 class="role">Loki</h6>
+                                <div class="imageRole">
+                                    <img src="..\roleimg\Thor\Tom Hiddleston.jpg" alt="" class="roleImage">
+                                </div>
+                            </div>
+                            <div class="role1">
+                                <h5 class="roleName">Cate Blanchett</h5>
+                                <h6 class="role">Hela</h6>
+                                <div class="imageRole">
+                                    <img src="..\roleimg\Thor\Cate Blanchett.jpg" alt="" class="roleImage">
+                                </div>
+                            </div>
+                            <div class="role1">
+                                <h5 class="roleName">Jeff Goldblum</h5>
+                                <h6 class="role">Grand Master</h6>
+                                <div class="imageRole">
+                                    <img src="..\roleimg\Thor\Jeff Goldblum.jpg" alt="" class="roleImage">
+                                </div>
+                            </div>
+                            <div class="role1">
+                                <h5 class="roleName">Mark Ruffalo</h5>
+                                <h6 class="role">Hulk</h6>
+                                <div class="imageRole">
+                                    <img src="..\roleimg\Mark Ruffalo.jpg" alt="" class="roleImage">
+                                </div>
+                            </div>
+                            <div class="role1">
+                                <h5 class="roleName">Idris Elba</h5>
+                                <h6 class="role">Heimdall</h6>
+                                <div class="imageRole">
+                                    <img src="..\roleimg\Thor\Idris Elba.jpg" alt="" class="roleImage">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="trailerVideoBox">
+                        <div class="trailer">Trailer</div>
+                        <iframe class="youtubeTrailer" width="770" height="440" src="https://www.youtube.com/embed/BynD1PEVAB4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <div class="watchMovie">
+                        <div class="watch">Watch The Movie in English</div>
+                        <div class="fullMovie">
+                            <a href="/html/watchMovies/15thor3.html">If you want watch a full movie. <span>Click on me</span>. Only original english version available.</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="movie" data-name="wandavision">
+                <div class="movieImageCover">
+                    <img src="/img/wanda-Vision.jpeg" alt="">
+                </div>
+                <div class="details">
+                    <div class="title">
+                        <h1>Wanda Vision</h1>
+                        <button class="exit" onclick="exitDetail(16)">
+                            <strong>X</strong>
+                        </button>
+                    </div>
+                    <div class="story">
+                        <div class="types">
+                            <div class="type">Action</div>
+                            <div class="type">Comedy</div>
+                            <div class="type">Drama</div>
+                        </div>
+                        <p class="text">Blends the style of classic sitcoms with the MCU, in which Wanda Maximoff and Vision - two super-powered beings living their ideal suburban lives - begin to suspect that everything is not as it seems.</p>
+                    </div>
+                    <div class="casts">
+                        <div class="topCast">Top Casts</div>
+                        <div class="roles">
+                            <div class="role1">
+                                <h5 class="roleName">Elizabeth Olsen</h5>
+                                <h6 class="role">Wanda</h6>
+                                <div class="imageRole">
+                                    <img src="..\roleimg\Elizabeth Olsen.jpg" alt="" class="roleImage">
+                                </div>
+                            </div>
+                            <div class="role1">
+                                <h5 class="roleName">Paul Bettany</h5>
+                                <h6 class="role">Vision</h6>
+                                <div class="imageRole">
+                                    <img src="..\roleimg\wanda\Paul Bettany.jpg" alt="" class="roleImage">
+                                </div>
+                            </div>
+                            <div class="role1">
+                                <h5 class="roleName">Kathryn Hahn</h5>
+                                <h6 class="role">Agnes</h6>
+                                <div class="imageRole">
+                                    <img src="..\roleimg\wanda\Kathryn Hahn.jpg" alt="" class="roleImage">
+                                </div>
+                            </div>
+                            <div class="role1">
+                                <h5 class="roleName">Teyonah Parris</h5>
+                                <h6 class="role">Monica Rambeau</h6>
+                                <div class="imageRole">
+                                    <img src="..\roleimg\wanda\Teyonah Parris.jpg" alt="" class="roleImage">
+                                </div>
+                            </div>
+                            <div class="role1">
+                                <h5 class="roleName">David A Payton</h5>
+                                <h6 class="role">Herb</h6>
+                                <div class="imageRole">
+                                    <img src="..\roleimg\wanda\David A Payton.jpg" alt="" class="roleImage">
+                                </div>
+                            </div>
+                            <div class="role1">
+                                <h5 class="roleName">David Lengel</h5>
+                                <h6 class="role">Phil Jones</h6>
+                                <div class="imageRole">
+                                    <img src="..\roleimg\wanda\David Lengel.jpg" alt="" class="roleImage">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="trailerVideoBox">
+                        <div class="trailer">Trailer</div>
+                        <iframe class="youtubeTrailer" width="770" height="440" src="https://www.youtube.com/embed/sj9J2ecsSpo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <div class="watchMovie">
+                        <div class="watch">Watch The Movie in English</div>
+                        <div class="fullMovie">
+                            <a href="/html/watchMovies/16wandavision.html">If you want watch a full movie. <span>Click on me</span>. Only original english version available.</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="movie" data-name="antman">
+                <div class="movieImageCover">
+                    <img src="/img/ant-man.jpg" alt="">
+                </div>
+                <div class="details">
+                    <div class="title">
+                        <h1>Ant-man</h1>
+                        <button class="exit" onclick="exitDetail(17)">
+                            <strong>X</strong>
+                        </button>
+                    </div>
+                    <div class="story">
+                        <div class="types">
+                            <div class="type">Action</div>
+                            <div class="type">Comedy</div>
+                            <div class="type">Adventure</div>
+                        </div>
+                        <p class="text">Armed with a super-suit with the astonishing ability to shrink in scale but increase in strength, cat burglar Scott Lang must embrace his inner hero and help his mentor, Dr. Hank Pym, pull off a plan that will save the world.</p>
+                    </div>
+                    <div class="casts">
+                        <div class="topCast">Top Casts</div>
+                        <div class="roles">
+                            <div class="role1">
+                                <h5 class="roleName">Paul Rudd</h5>
+                                <h6 class="role">Ant-Man</h6>
+                                <div class="imageRole">
+                                    <img src="..\roleimg\AW\Paul Rudd.jpg" alt="" class="roleImage">
+                                </div>
+                            </div>
+                            <div class="role1">
+                                <h5 class="roleName">Micheal Dougles</h5>
+                                <h6 class="role">Dr.Hank Pym</h6>
+                                <div class="imageRole">
+                                    <img src="..\roleimg\AW\Michael Douglas.jpg" alt="" class="roleImage">
+                                </div>
+                            </div>
+                            <div class="role1">
+                                <h5 class="roleName">Corey Stoll</h5>
+                                <h6 class="role">Darren Cross</h6>
+                                <div class="imageRole">
+                                    <img src="..\roleimg\AW\Corey Stoll.jpeg" alt="" class="roleImage">
+                                </div>
+                            </div>
+                            <div class="role1">
+                                <h5 class="roleName">Evangeline Lilly</h5>
+                                <h6 class="role">Hope Van Dyne</h6>
+                                <div class="imageRole">
+                                    <img src="..\roleimg\AW\Evangeline Lilly.jpg" alt="" class="roleImage">
+                                </div>
+                            </div>
+                            <div class="role1">
+                                <h5 class="roleName">Michael Peña</h5>
+                                <h6 class="role">Luis</h6>
+                                <div class="imageRole">
+                                    <img src="..\roleimg\AW\Michael Peña.jpg" alt="" class="roleImage">
+                                </div>
+                            </div>
+                            <div class="role1">
+                                <h5 class="roleName">T.I</h5>
+                                <h6 class="role">Dave</h6>
+                                <div class="imageRole">
+                                    <img src="..\roleimg\AW\T.I..jpg" alt="" class="roleImage">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="trailerVideoBox">
+                        <div class="trailer">Trailer</div>
+                        <iframe class="youtubeTrailer" width="770" height="440" src="https://www.youtube.com/embed/pWdKf3MneyI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <div class="watchMovie">
+                        <div class="watch">Watch The Movie in English</div>
+                        <div class="fullMovie">
+                           <a href="/html/watchMovies/17antman.html">If you want watch a full movie. <span>Click on me</span>. Only original english version available.</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="movie" data-name="moonknight">
+                <div class="movieImageCover">
+                    <img src="/img/moon-knight.jpg" alt="">
+                </div>
+                <div class="details">
+                    <div class="title">
+                        <h1>Moon-knight</h1>
+                        <button class="exit" onclick="exitDetail(18)">
+                            <strong>X</strong>
+                        </button>
+                    </div>
+                    <div class="story">
+                        <div class="types">
+                            <div class="type">Action</div>
+                            <div class="type">Fantasy</div>
+                            <div class="type">Adventure</div>
+                        </div>
+                        <p class="text">Steven Grant discovers he's been granted the powers of an Egyptian moon god. But he soon finds out that these newfound powers can be both a blessing and a curse to his troubled life.</p>
+                    </div>
+                    <div class="casts">
+                        <div class="topCast">Top Casts</div>
+                        <div class="roles">
+                            <div class="role1">
+                                <h5 class="roleName">Oscar Isaac</h5>
+                                <h6 class="role">Moon-Knight</h6>
+                                <div class="imageRole">
+                                    <img src="..\roleimg\moon\Oscar Isaac.jpg" alt="" class="roleImage">
+                                </div>
+                            </div>
+                            <div class="role1">
+                                <h5 class="roleName">Ethan hawke</h5>
+                                <h6 class="role">Arthur Harrow</h6>
+                                <div class="imageRole">
+                                    <img src="..\roleimg\moon\Ethan Hawke.jpg" alt="" class="roleImage">
+                                </div>
+                            </div>
+                            <div class="role1">
+                                <h5 class="roleName">May Calamawy</h5>
+                                <h6 class="role">Layla El-Faouly</h6>
+                                <div class="imageRole">
+                                    <img src="..\roleimg\moon\May Calamawy.jpg" alt="" class="roleImage">
+                                </div>
+                            </div>
+                            <div class="role1">
+                                <h5 class="roleName">Michael Hernandez</h5>
+                                <h6 class="role">Marc Spector</h6>
+                                <div class="imageRole">
+                                    <img src="..\roleimg\moon\Michael Benjamin Hernandez.webp" alt="" class="roleImage">
+                                </div>
+                            </div>
+                            <div class="role1">
+                                <h5 class="roleName">F. Murray Abraham</h5>
+                                <h6 class="role">Khonshu</h6>
+                                <div class="imageRole">
+                                    <img src="..\roleimg\moon\Abraham.jpg" alt="" class="roleImage">
+                                </div>
+                            </div>
+                            <div class="role1">
+                                <h5 class="roleName">Ann Akinjirin</h5>
+                                <h6 class="role">Bobbi</h6>
+                                <div class="imageRole">
+                                    <img src="..\roleimg\moon\Ann Akinjirin.jpg" alt="" class="roleImage">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="trailerVideoBox">
+                        <div class="trailer">Trailer</div>
+                        <iframe class="youtubeTrailer" width="770" height="440" src="https://www.youtube.com/embed/x7Krla_UxRg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <div class="watchMovie">
+                        <div class="watch">Watch The Movie in English</div>
+                        <div class="fullMovie">
+                           <a href="/html/watchMovies/18moonknight.html">If you want watch a full movie. <span>Click on me</span>. Only original english version available.</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="movie" data-name="hawkeye">
+                <div class="movieImageCover">
+                    <img src="/img/hawkeye.jpeg" alt="">
+                </div>
+                <div class="details">
+                    <div class="title">
+                        <h1>Hawkeye</h1>
+                        <button class="exit" onclick="exitDetail(19)">
+                            <strong>X</strong>
+                        </button>
+                    </div>
+                    <div class="story">
+                        <div class="types">
+                            <div class="type">Action</div>
+                            <div class="type">Fantasy</div>
+                            <div class="type">Crime</div>
+                        </div>
+                        <p class="text">Series based on the Marvel Comics superhero Hawkeye, centering on the adventures of Young Avenger, Kate Bishop, who took on the role after the original Avenger, Clint Barton.</p>
+                    </div>
+                    <div class="casts">
+                        <div class="topCast">Top Casts</div>
+                        <div class="roles">
+                            <div class="role1">
+                                <h5 class="roleName">Jeremy Renner</h5>
+                                <h6 class="role">Hawkeye</h6>
+                                <div class="imageRole">
+                                    <img src="..\roleimg\hawkeye\Jeremy Renner.jpg" alt="" class="roleImage">
+                                </div>
+                            </div>
+                            <div class="role1">
+                                <h5 class="roleName">Hailee Steinfeld</h5>
+                                <h6 class="role">Kate Bishop</h6>
+                                <div class="imageRole">
+                                    <img src="..\roleimg\hawkeye\Hailee Steinfeld.jpg" alt="" class="roleImage">
+                                </div>
+                            </div>
+                            <div class="role1">
+                                <h5 class="roleName">Florence Pugh</h5>
+                                <h6 class="role">Yelena</h6>
+                                <div class="imageRole">
+                                    <img src="..\roleimg\hawkeye\Florence Pugh.jpg" alt="" class="roleImage">
+                                </div>
+                            </div>
+                            <div class="role1">
+                                <h5 class="roleName">Vera Farmiga</h5>
+                                <h6 class="role">Eleanor Bishop</h6>
+                                <div class="imageRole">
+                                    <img src="..\roleimg\hawkeye\Vera Farmiga.jpg" alt="" class="roleImage">
+                                </div>
+                            </div>
+                            <div class="role1">
+                                <h5 class="roleName">Tony Dalton</h5>
+                                <h6 class="role">Jack Duquesno</h6>
+                                <div class="imageRole">
+                                    <img src="..\roleimg\hawkeye\Tony Dalton.jpg" alt="" class="roleImage">
+                                </div>
+                            </div>
+                            <div class="role1">
+                                <h5 class="roleName">Fra Fee</h5>
+                                <h6 class="role">Kazi</h6>
+                                <div class="imageRole">
+                                    <img src="..\roleimg\hawkeye\Fra Fee.jpg" alt="" class="roleImage">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="trailerVideoBox">
+                        <div class="trailer">Trailer</div>
+                        <iframe class="youtubeTrailer" width="770" height="440" src="https://www.youtube.com/embed/5VYb3B1ETlk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <div class="watchMovie">
+                        <div class="watch">Watch The Movie in English</div>
+                        <div class="fullMovie">
+                           <a href="/html/watchMovies/19hawkeye.html">If you want watch a full movie. <span>Click on me</span>. Only original english version available.</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="movie" data-name="guardiansofthegalaxy">
+                <div class="movieImageCover">
+                    <img src="/img/guardians of the galaxy.jpg" alt="">
+                </div>
+                <div class="details">
+                    <div class="title">
+                        <h1>Guardians of the Galaxy</h1>
+                        <button class="exit" onclick="exitDetail(20)">
+                            <strong>X</strong>
+                        </button>
+                    </div>
+                    <div class="story">
+                        <div class="types">
+                            <div class="type">Action</div>
+                            <div class="type">Comedy</div>
+                            <div class="type">Adventure</div>
+                        </div>
+                        <p class="text">A group of intergalactic criminals must pull together to stop a fanatical warrior with plans to purge the universe.</p>
+                    </div>
+                    <div class="casts">
+                        <div class="topCast">Top Casts</div>
+                        <div class="roles">
+                            <div class="role1">
+                                <h5 class="roleName">Chris Pratt</h5>
+                                <h6 class="role">Star Lord</h6>
+                                <div class="imageRole">
+                                    <img src="..\roleimg\GOG2\Chris Pratt.jpg" alt="" class="roleImage">
+                                </div>
+                            </div>
+                            <div class="role1">
+                                <h5 class="roleName">Zoe Saldana</h5>
+                                <h6 class="role">Gamora</h6>
+                                <div class="imageRole">
+                                    <img src="..\roleimg\GOG2\Zoe Saldana.jpg" alt="" class="roleImage">
+                                </div>
+                            </div>
+                            <div class="role1">
+                                <h5 class="roleName">Dave Bautista</h5>
+                                <h6 class="role">Drax</h6>
+                                <div class="imageRole">
+                                    <img src="..\roleimg\GOG2\Dave Bautista.jpg" alt="" class="roleImage">
+                                </div>
+                            </div>
+                            <div class="role1">
+                                <h5 class="roleName">Vin Diesel</h5>
+                                <h6 class="role">Groot(Voice)</h6>
+                                <div class="imageRole">
+                                    <img src="..\roleimg\GOG2\Vin Diesel.jpg" alt="" class="roleImage">
+                                </div>
+                            </div>
+                            <div class="role1">
+                                <h5 class="roleName">Bradley Cooper</h5>
+                                <h6 class="role">Rocket(Voice)</h6>
+                                <div class="imageRole">
+                                    <img src="..\roleimg\GOG2\Bradley Cooper.jpg" alt="" class="roleImage">
+                                </div>
+                            </div>
+                            <div class="role1">
+                                <h5 class="roleName">Lee Pace</h5>
+                                <h6 class="role">Ronan</h6>
+                                <div class="imageRole">
+                                    <img src="..\roleimg\GOG2\Lee Pace.jpeg" alt="" class="roleImage">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="trailerVideoBox">
+                        <div class="trailer">Trailer</div>
+                        <iframe class="youtubeTrailer" width="770" height="440" src="https://www.youtube.com/embed/2LIQ2-PZBC8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <div class="watchMovie">
+                        <div class="watch">Watch The Movie in English</div>
+                        <div class="fullMovie">
+                           <a href="/html/watchMovies/20guardianofgalaxy.html">If you want watch a full movie. <span>Click on me</span>. Only original english version available.</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="movie" data-name="ironman2">
+                <div class="movieImageCover">
+                    <img src="img/iron man 2.jpeg" alt="">
+                </div>
+                <div class="details">
+                    <div class="title">
+                        <h1>Iron Man 2</h1>
+                        <button class="exit" onclick="exitDetail(21)">
+                            <strong>X</strong>
+                        </button>
+                    </div>
+                    <div class="story">
+                        <div class="types">
+                            <div class="type">Action</div>
+                            <div class="type">Adventure</div>
+                            <div class="type">Sci-Fi</div>
+                        </div>
+                        <p class="text">With the world now aware of his identity as Iron Man, Tony Stark must contend with both his declining health and a vengeful mad man with ties to his father's legacy.</p>
+                    </div>
+                    <div class="casts">
+                        <div class="topCast">Top Casts</div>
+                        <div class="roles">
+                            <div class="role1">
+                                <h5 class="roleName">Robert Downey Jr.</h5>
+                                <h6 class="role">Iron Man</h6>
+                                <div class="imageRole">
+                                    <img src="..\roleimg\Robert Downey Jr.jpg" alt="" class="roleImage">
+                                </div>
+                            </div>
+                            <div class="role1">
+                                <h5 class="roleName">Gwyneth Paltrow</h5>
+                                <h6 class="role">Pepper Potts</h6>
+                                <div class="imageRole">
+                                    <img src="..\roleimg\IM\Gwyneth Paltrow.jpg" alt="" class="roleImage">
+                                </div>
+                            </div>
+                            <div class="role1">
+                                <h5 class="roleName">Mickey Rourke</h5>
+                                <h6 class="role">Ivan Vanko</h6>
+                                <div class="imageRole">
+                                    <img src="..\roleimg\IM\Mickey Rourke.jpg" alt="" class="roleImage">
+                                </div>
+                            </div>
+                            <div class="role1">
+                                <h5 class="roleName">Don Cheadle</h5>
+                                <h6 class="role">War Machine</h6>
+                                <div class="imageRole">
+                                    <img src="..\roleimg\IM\Don Cheadle.jpeg" alt="" class="roleImage">
+                                </div>
+                            </div>
+                            <div class="role1">
+                                <h5 class="roleName">Scarlett Johansson</h5>
+                                <h6 class="role">Black Widow</h6>
+                                <div class="imageRole">
+                                    <img src="..\roleimg\IM\Scarlett Johansson.jpg" alt="" class="roleImage">
+                                </div>
+                            </div>
+                            <div class="role1">
+                                <h5 class="roleName">Sam Rockwell</h5>
+                                <h6 class="role">Justin Hammer</h6>
+                                <div class="imageRole">
+                                    <img src="..\roleimg\IM\Sam Rockwell.jpg" alt="" class="roleImage">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="trailerVideoBox">
+                        <div class="trailer">Trailer</div>
+                        <iframe class="youtubeTrailer" width="770" height="440" src="https://www.youtube.com/embed/BoohRoVA9WQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <div class="watchMovie">
+                        <div class="watch">Watch The Movie in English</div>
+                        <div class="fullMovie">
+                           <a href="/html/watchMovies/21ironman2.html">If you want watch a full movie. <span>Click on me</span>. Only original english version available.</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="movie" data-name="ironman3">
+                <div class="movieImageCover">
+                    <img src="/img/iron man 3.jpg" alt="">
+                </div>
+                <div class="details">
+                    <div class="title">
+                        <h1>Iron Man 3</h1>
+                        <button class="exit" onclick="exitDetail(22)">
+                            <strong>X</strong>
+                        </button>
+                    </div>
+                    <div class="story">
+                        <div class="types">
+                            <div class="type">Action</div>
+                            <div class="type">Adventure</div>
+                            <div class="type">Sci-Fi</div>
+                        </div>
+                        <p class="text">When Tony Stark's world is torn apart by a formidable terrorist called the Mandarin, he starts an odyssey of rebuilding and retribution.</p>
+                    </div>
+                    <div class="casts">
+                        <div class="topCast">Top Casts</div>
+                        <div class="roles">
+                            <div class="role1">
+                                <h5 class="roleName">Robert Downey Jr.</h5>
+                                <h6 class="role">Iron Man</h6>
+                                <div class="imageRole">
+                                    <img src="..\roleimg\Robert Downey Jr.jpg" alt="" class="roleImage">
+                                </div>
+                            </div>
+                            <div class="role1">
+                                <h5 class="roleName">Gwyneth Paltrow</h5>
+                                <h6 class="role">Pepper Potts</h6>
+                                <div class="imageRole">
+                                    <img src="..\roleimg\IM\Gwyneth Paltrow.jpg" alt="" class="roleImage">
+                                </div>
+                            </div>
+                            <div class="role1">
+                                <h5 class="roleName">Guy Pearce</h5>
+                                <h6 class="role">Aldrich Killian</h6>
+                                <div class="imageRole">
+                                    <img src="..\roleimg\IM\Guy Pearce.jpg" alt="" class="roleImage">
+                                </div>
+                            </div>
+                            <div class="role1">
+                                <h5 class="roleName">Don Cheadle</h5>
+                                <h6 class="role">War Machine</h6>
+                                <div class="imageRole">
+                                    <img src="..\roleimg\IM\Don Cheadle.jpeg" alt="" class="roleImage">
+                                </div>
+                            </div>
+                            <div class="role1">
+                                <h5 class="roleName">Rebecca Hall</h5>
+                                <h6 class="role">Maya Henson</h6>
+                                <div class="imageRole">
+                                    <img src="..\roleimg\IM\Rebecca Hall.jpg" alt="" class="roleImage">
+                                </div>
+                            </div>
+                            <div class="role1">
+                                <h5 class="roleName">Ben Kingsley</h5>
+                                <h6 class="role">Mandarin</h6>
+                                <div class="imageRole">
+                                    <img src="..\roleimg\IM\Ben Kingsley.jpg" alt="" class="roleImage">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="trailerVideoBox">
+                        <div class="trailer">Trailer</div>
+                        <iframe class="youtubeTrailer" width="770" height="440" src="https://www.youtube.com/embed/oYSD2VQagc4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <div class="watchMovie">
+                        <div class="watch">Watch The Movie in English</div>
+                        <div class="fullMovie">
+                           <a href="/html/watchMovies/22ironman3.html">If you want watch a full movie. <span>Click on me</span>. Only original english version available.</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="movie" data-name="quantumania">
+                <div class="movieImageCover">
+                    <img src="/img/ant man and wasp quantumania.jpeg" alt="">
+                </div>
+                <div class="details">
+                    <div class="title">
+                        <h1>Ant-man and WASP: QUANTUMANIA</h1>
+                        <button class="exit" onclick="exitDetail(23)">
+                            <strong>X</strong>
+                        </button>
+                    </div>
+                    <div class="story">
+                        <div class="types">
+                            <div class="type">Action</div>
+                            <div class="type">Adventure</div>
+                            <div class="type">Comedy</div>
+                        </div>
+                        <p class="text">The further adventures of Ant-Man and the Wasp.</p>
+                    </div>
+                    <div class="casts">
+                        <div class="topCast">Top Casts</div>
+                        <div class="roles">
+                            <div class="role1">
+                                <h5 class="roleName">Paul Rudd</h5>
+                                <h6 class="role">Ant-man</h6>
+                                <div class="imageRole">
+                                    <img src="..\roleimg\AW\Paul Rudd.jpg" alt="" class="roleImage">
+                                </div>
+                            </div>
+                            <div class="role1">
+                                <h5 class="roleName">Evangeline Lilly</h5>
+                                <h6 class="role">Wasp</h6>
+                                <div class="imageRole">
+                                    <img src="..\roleimg\AW\Evangeline Lilly.jpg" alt="" class="roleImage">
+                                </div>
+                            </div>
+                            <div class="role1">
+                                <h5 class="roleName">Michelle Pfeiffer</h5>
+                                <h6 class="role">Janet Van Dyne</h6>
+                                <div class="imageRole">
+                                    <img src="..\roleimg\AW\Michelle Pfeiffer.jpg" alt="" class="roleImage">
+                                </div>
+                            </div>
+                            <div class="role1">
+                                <h5 class="roleName">Jonathan Majors</h5>
+                                <h6 class="role">Kang</h6>
+                                <div class="imageRole">
+                                    <img src="..\roleimg\AW\Jonathan Majors.jpg" alt="" class="roleImage">
+                                </div>
+                            </div>
+                            <div class="role1">
+                                <h5 class="roleName">Kathryn Newton</h5>
+                                <h6 class="role">Cassie Lang</h6>
+                                <div class="imageRole">
+                                    <img src="..\roleimg\AW\Kathryn Newton.jpg" alt="" class="roleImage">
+                                </div>
+                            </div>
+                            <div class="role1">
+                                <h5 class="roleName">Michael Douglas</h5>
+                                <h6 class="role">Dr.Hynk Pym</h6>
+                                <div class="imageRole">
+                                    <img src="..\roleimg\AW\Michael Douglas.jpg" alt="" class="roleImage">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="trailerVideoBox">
+                        <div class="trailer">Trailer</div>
+                        <iframe class="youtubeTrailer" width="770" height="440" src="https://www.youtube.com/embed/4SPDFaZde_4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <div class="watchMovie">
+                        <div class="watch">Watch The Movie in English</div>
+                        <div class="fullMovie">
+                            <iframe width="777" height="450"  src="https://www.youtube.com/embed/jhmsTpGq83k" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="movie" data-name="thor">
+                <div class="movieImageCover">
+                    <img src="/img/thor.jpg" alt="">
+                </div>
+                <div class="details">
+                    <div class="title">
+                        <h1>Thor</h1>
+                        <button class="exit" onclick="exitDetail(24)">
+                            <strong>X</strong>
+                        </button>
+                    </div>
+                    <div class="story">
+                        <div class="types">
+                            <div class="type">Action</div>
+                            <div class="type">Adventure</div>
+                            <div class="type">Fantasy</div>
+                        </div>
+                        <p class="text">The powerful but arrogant god Thor is cast out of Asgard to live amongst humans in Midgard (Earth), where he soon becomes one of their finest defenders.</p>
+                    </div>
+                    <div class="casts">
+                        <div class="topCast">Top Casts</div>
+                        <div class="roles">
+                            <div class="role1">
+                                <h5 class="roleName">Chris Hemsworth</h5>
+                                <h6 class="role">Thor</h6>
+                                <div class="imageRole">
+                                    <img src="..\roleimg\Chris Hemsworth.jpg" alt="" class="roleImage">
+                                </div>
+                            </div>
+                            <div class="role1">
+                                <h5 class="roleName">Natalie Portman</h5>
+                                <h6 class="role">Jane Foster</h6>
+                                <div class="imageRole">
+                                    <img src="..\roleimg\Thor\Natalie Portman.jpg" alt="" class="roleImage">
+                                </div>
+                            </div>
+                            <div class="role1">
+                                <h5 class="roleName">Stellan Skarsgård</h5>
+                                <h6 class="role">Erik Selvig</h6>
+                                <div class="imageRole">
+                                    <img src="..\roleimg\Thor\Stellan Skarsgård.jpg" alt="" class="roleImage">
+                                </div>
+                            </div>
+                            <div class="role1">
+                                <h5 class="roleName">Tom Hiddleston</h5>
+                                <h6 class="role">Loki</h6>
+                                <div class="imageRole">
+                                    <img src="..\roleimg\Thor\Tom Hiddleston.jpg" alt="" class="roleImage">
+                                </div>
+                            </div>
+                            <div class="role1">
+                                <h5 class="roleName">Anthony Hopkins</h5>
+                                <h6 class="role">Odin</h6>
+                                <div class="imageRole">
+                                    <img src="..\roleimg\Thor\Anthony Hopkins.jpg" alt="" class="roleImage">
+                                </div>
+                            </div>
+                            <div class="role1">
+                                <h5 class="roleName">Kat Dennings</h5>
+                                <h6 class="role">Darcy Lewis</h6>
+                                <div class="imageRole">
+                                    <img src="..\roleimg\Thor\Kat Dennings.jpg" alt="" class="roleImage">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="trailerVideoBox">
+                        <div class="trailer">Trailer</div>
+                        <iframe class="youtubeTrailer" width="770" height="440" src="https://www.youtube.com/embed/JOddp-nlNvQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <div class="watchMovie">
+                        <div class="watch">Watch The Movie in English</div>
+                        <div class="fullMovie">
+                            <a href="/html/watchMovies/24thor.html">If you want watch a full movie. <span>Click on me</span>. Only original english version available.</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="movie" data-name="hulk">
+                <div class="movieImageCover">
+                    <img src="/img/incredible hulk.jpeg" alt="">
+                </div>
+                <div class="details">
+                    <div class="title">
+                        <h1>Incredible Hulk</h1>
+                        <button class="exit" onclick="exitDetail(25)">
+                            <strong>X</strong>
+                        </button>
+                    </div>
+                    <div class="story">
+                        <div class="types">
+                            <div class="type">Action</div>
+                            <div class="type">Adventure</div>
+                            <div class="type">Sci-Fi</div>
+                        </div>
+                        <p class="text">Bruce Banner, a scientist on the run from the U.S. Government, must find a cure for the monster he turns into whenever he loses his temper.</p>
+                    </div>
+                    <div class="casts">
+                        <div class="topCast">Top Casts</div>
+                        <div class="roles">
+                            <div class="role1">
+                                <h5 class="roleName">Edward Norton</h5>
+                                <h6 class="role">Hulk</h6>
+                                <div class="imageRole">
+                                    <img src="..\roleimg\hulk\Edward Norton.jpg" alt="" class="roleImage">
+                                </div>
+                            </div>
+                            <div class="role1">
+                                <h5 class="roleName">Liv Tyler</h5>
+                                <h6 class="role">Betty Ross</h6>
+                                <div class="imageRole">
+                                    <img src="..\roleimg\hulk\Liv Tyler.jpg" alt="" class="roleImage">
+                                </div>
+                            </div>
+                            <div class="role1">
+                                <h5 class="roleName">Tim Roth</h5>
+                                <h6 class="role">Emil Blonsky</h6>
+                                <div class="imageRole">
+                                    <img src="..\roleimg\hulk\Tim Roth.jpg" alt="" class="roleImage">
+                                </div>
+                            </div>
+                            <div class="role1">
+                                <h5 class="roleName">William Hurt</h5>
+                                <h6 class="role">General Ross</h6>
+                                <div class="imageRole">
+                                    <img src="..\roleimg\hulk\William Hurt.jpg" alt="" class="roleImage">
+                                </div>
+                            </div>
+                            <div class="role1">
+                                <h5 class="roleName">Tim Blake Nelson</h5>
+                                <h6 class="role">Samuel Sterns</h6>
+                                <div class="imageRole">
+                                    <img src="..\roleimg\hulk\Tim Blake Nelson.jpg" alt="" class="roleImage">
+                                </div>
+                            </div>
+                            <div class="role1">
+                                <h5 class="roleName">Ty Burrell</h5>
+                                <h6 class="role">Leonard</h6>
+                                <div class="imageRole">
+                                    <img src="..\roleimg\hulk\Ty Burrell.jpg" alt="" class="roleImage">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="trailerVideoBox">
+                        <div class="trailer">Trailer</div>
+                        <iframe class="youtubeTrailer" width="774" height="440" src="https://www.youtube.com/embed/xbqNb2PFKKA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <div class="watchMovie">
+                        <div class="watch">Watch The Movie in English</div>
+                        <div class="fullMovie">
+                            <a href="/html/watchMovies/25incrediblehulk.html">If you want watch a full movie. <span>Click on me</span>. Only original english version available.</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="movie" data-name="wintersoldier">
+                <div class="movieImageCover">
+                    <img src="/img/captain america winter soldier.jpg" alt="">
+                </div>
+                <div class="details">
+                    <div class="title">
+                        <h1>Captain America: The Winter Soldier</h1>
+                        <button class="exit" onclick="exitDetail(26)">
+                            <strong>X</strong>
+                        </button>
+                    </div>
+                    <div class="story">
+                        <div class="types">
+                            <div class="type">Action</div>
+                            <div class="type">Adventure</div>
+                            <div class="type">Sci-Fi</div>
+                        </div>
+                        <p class="text">As Steve Rogers struggles to embrace his role in the modern world, he teams up with a fellow Avenger and S.H.I.E.L.D agent, Black Widow, to battle a new threat from history: an assassin known as the Winter Soldier.</p>
+                    </div>
+                    <div class="casts">
+                        <div class="topCast">Top Casts</div>
+                        <div class="roles">
+                            <div class="role1">
+                                <h5 class="roleName">Chris Evans</h5>
+                                <h6 class="role">Captain America</h6>
+                                <div class="imageRole">
+                                    <img src="..\roleimg\Chris Evans.jpg" alt="" class="roleImage">
+                                </div>
+                            </div>
+                            <div class="role1">
+                                <h5 class="roleName">Robert Redford</h5>
+                                <h6 class="role">Alexander Pierce</h6>
+                                <div class="imageRole">
+                                    <img src="..\roleimg\Captain\Robert Redford.jpg" alt="" class="roleImage">
+                                </div>
+                            </div>
+                            <div class="role1">
+                                <h5 class="roleName">Scarlet Johansson</h5>
+                                <h6 class="role">Black Widow</h6>
+                                <div class="imageRole">
+                                    <img src="..\roleimg\Black widow.jpg" alt="" class="roleImage">
+                                </div>
+                            </div>
+                            <div class="role1">
+                                <h5 class="roleName">Sebastian Stan</h5>
+                                <h6 class="role">Bucky Barnes</h6>
+                                <div class="imageRole">
+                                    <img src="..\roleimg\Sebastian Stan.jpg" alt="" class="roleImage">
+                                </div>
+                            </div>
+                            <div class="role1">
+                                <h5 class="roleName">Anthony Mackie</h5>
+                                <h6 class="role">Sam Wilson</h6>
+                                <div class="imageRole">
+                                    <img src="..\roleimg\Anthony Mackie.jpg" alt="" class="roleImage">
+                                </div>
+                            </div>
+                            <div class="role1">
+                                <h5 class="roleName">Samuel L. Jackson</h5>
+                                <h6 class="role">Nick Fury</h6>
+                                <div class="imageRole">
+                                    <img src="..\roleimg\Samuel L. Jackson.jpg" alt="" class="roleImage">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="trailerVideoBox">
+                        <div class="trailer">Trailer</div>
+                        <iframe class="youtubeTrailer" width="774" height="440" src="https://www.youtube.com/embed/7SlILk2WMTI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <div class="watchMovie">
+                        <div class="watch">Watch The Movie in English</div>
+                        <div class="fullMovie">
+                            <a href="/html/watchMovies/26wintersoldier.html">If you want watch a full movie. <span>Click on me</span>. Only original english version available.</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="movie" data-name="blackwidow">
+                <div class="movieImageCover">
+                    <img src="/img/black-widow.jpeg" alt="">
+                </div>
+                <div class="details">
+                    <div class="title">
+                        <h1>Black Widow</h1>
+                        <button class="exit" onclick="exitDetail(27)">
+                            <strong>X</strong>
+                        </button>
+                    </div>
+                    <div class="story">
+                        <div class="types">
+                            <div class="type">Action</div>
+                            <div class="type">Adventure</div>
+                            <div class="type">Sci-Fi</div>
+                        </div>
+                        <p class="text">Natasha Romanoff confronts the darker parts of her ledger when a dangerous conspiracy with ties to her past arises.</p>
+                    </div>
+                    <div class="casts">
+                        <div class="topCast">Top Casts</div>
+                        <div class="roles">
+                            <div class="role1">
+                                <h5 class="roleName">Scarlett Johansson</h5>
+                                <h6 class="role">Natasha Romanoff</h6>
+                                <div class="imageRole">
+                                    <img src="..\roleimg\black\Scarlett Johansson.jpg" alt="" class="roleImage">
+                                </div>
+                            </div>
+                            <div class="role1">
+                                <h5 class="roleName">Florence Pugh</h5>
+                                <h6 class="role">Yelena</h6>
+                                <div class="imageRole">
+                                    <img src="..\roleimg\black\Florence Pugh.jpg" alt="" class="roleImage">
+                                </div>
+                            </div>
+                            <div class="role1">
+                                <h5 class="roleName">David Harbour</h5>
+                                <h6 class="role">Alexei</h6>
+                                <div class="imageRole">
+                                    <img src="..\roleimg\black\David Harbour.jpg" alt="" class="roleImage">
+                                </div>
+                            </div>
+                            <div class="role1">
+                                <h5 class="roleName">Rachel Weisz</h5>
+                                <h6 class="role">Melina</h6>
+                                <div class="imageRole">
+                                    <img src="..\roleimg\black\Rachel Weisz.jpg" alt="" class="roleImage">
+                                </div>
+                            </div>
+                            <div class="role1">
+                                <h5 class="roleName">Ray Winstone</h5>
+                                <h6 class="role">Dreykov</h6>
+                                <div class="imageRole">
+                                    <img src="..\roleimg\black\Ray Winstone.jpg" alt="" class="roleImage">
+                                </div>
+                            </div>
+                            <div class="role1">
+                                <h5 class="roleName">O-T Fagbenle</h5>
+                                <h6 class="role">Mason</h6>
+                                <div class="imageRole">
+                                    <img src="..\roleimg\black\O-T Fagbenle.jpg" alt="" class="roleImage">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="trailerVideoBox">
+                        <div class="trailer">Trailer</div>
+                        <iframe class="youtubeTrailer" width="774" height="440" src="https://www.youtube.com/embed/ybji16u608U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <div class="watchMovie">
+                        <div class="watch">Watch The Movie in English</div>
+                        <div class="fullMovie">
+                            <a href="/html/watchMovies/27blackwidow.html">If you want watch a full movie. <span>Click on me</span>. Only original english version available.</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="movie" data-name="doctorstrange">
+                <div class="movieImageCover">
+                    <img src="..\img\doctor strange.jpg" alt="">
+                </div>
+                <div class="details">
+                    <div class="title">
+                        <h1>Doctor Strange</h1>
+                        <button class="exit" onclick="exitDetail(28)">
+                            <strong>X</strong>
+                        </button>
+                    </div>
+                    <div class="story">
+                        <div class="types">
+                            <div class="type">Action</div>
+                            <div class="type">Adventure</div>
+                            <div class="type">Fantasy</div>
+                        </div>
+                        <p class="text">While on a journey of physical and spiritual healing, a brilliant neurosurgeon is drawn into the world of the mystic arts.</p>
+                    </div>
+                    <div class="casts">
+                        <div class="topCast">Top Casts</div>
+                        <div class="roles">
+                            <div class="role1">
+                                <h5 class="roleName">BenedictCumberbatch</h5>
+                                <h6 class="role">Doctor Stephen Strange</h6>
+                                <div class="imageRole">
+                                    <img src="..\roleimg\Doctor Stephen Strange.jpg" alt="" class="roleImage">
+                                </div>
+                            </div>
+                            <div class="role1">
+                                <h5 class="roleName">Mads Mikkelsen</h5>
+                                <h6 class="role">Kaecilius</h6>
+                                <div class="imageRole">
+                                    <img src="..\roleimg\doctor\Mads Mikkelsen.jpg" alt="" class="roleImage">
+                                </div>
+                            </div>
+                            <div class="role1">
+                                <h5 class="roleName">Benedict Wong</h5>
+                                <h6 class="role">Wong</h6>
+                                <div class="imageRole">
+                                    <img src="..\roleimg\Wong.jpg" alt="" class="roleImage">
+                                </div>
+                            </div>
+                            <div class="role1">
+                                <h5 class="roleName">Tilda Swinton</h5>
+                                <h6 class="role">The Ancient One</h6>
+                                <div class="imageRole">
+                                    <img src="..\roleimg\doctor\Tilda Swinton.jpg" alt="" class="roleImage">
+                                </div>
+                            </div>
+                            <div class="role1">
+                                <h5 class="roleName">Rachel McAdams</h5>
+                                <h6 class="role">Dr. Christine Palmer</h6>
+                                <div class="imageRole">
+                                    <img src="..\roleimg\Rachel McAdams.jpg" alt="" class="roleImage">
+                                </div>
+                            </div>
+                            <div class="role1">
+                                <h5 class="roleName">Chiwetel Ejiofor</h5>
+                                <h6 class="role">Baron Mordo</h6>
+                                <div class="imageRole">
+                                    <img src="..\roleimg\Chiwetel Ejiofor.jpg" alt="" class="roleImage">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="trailerVideoBox">
+                        <div class="trailer">Trailer</div>
+                        <iframe class="youtubeTrailer" width="774" height="440" src="https://www.youtube.com/embed/h7gvFravm4A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <div class="watchMovie">
+                        <div class="watch">Watch The Movie in English</div>
+                        <div class="fullMovie">
+                            <a href="/html/watchMovies/28doctorstrange.html">If you want watch a full movie. <span>Click on me</span>. Only original english version available.</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="movie" data-name="avenger">
+                <div class="movieImageCover">
+                    <img src="/img/avengers.webp" alt="">
+                </div>
+                <div class="details">
+                    <div class="title">
+                        <h1>Avengers</h1>
+                        <button class="exit" onclick="exitDetail('29')">
+                            <strong>X</strong>
+                        </button>
+                    </div>
+                    <div class="story">
+                        <div class="types">
+                            <div class="type">Action</div>
+                            <div class="type">Adventure</div>
+                            <div class="type">Sci-Fi</div>
+                        </div>
+                        <p class="text">Earth's mightiest heroes must come together and learn to fight as a team if they are going to stop the mischievous Loki and his alien army from enslaving humanity.</p>
+                    </div>
+                    <div class="casts">
+                        <div class="topCast">Top Casts</div>
+                        <div class="roles">
+                            <div class="role1">
+                                <h5 class="roleName">Robert Downey Jr</h5>
+                                <h6 class="role">as Tony stark (Iron Man)</h6>
+                                <div class="imageRole">
+                                    <img src="..\roleimg\Robert Downey jr.jpg" alt="" class="roleImage">
+                                </div>
+                            </div>
+                            <div class="role1">
+                                <h5 class="roleName">Chris Evans</h5>
+                                <h6 class="role">Captain America</h6>
+                                <div class="imageRole">
+                                    <img src="..\roleimg\Chris Evans.jpg" alt="" class="roleImage">
+                                </div>
+                            </div>
+                            <div class="role1">
+                                <h5 class="roleName">Mark Ruffalo</h5>
+                                <h6 class="role">Hulk</h6>
+                                <div class="imageRole">
+                                    <img src="..\roleimg\Mark Ruffalo.jpg" alt="" class="roleImage">
+                                </div>
+                            </div>
+                            <div class="role1">
+                                <h5 class="roleName">Chris Hemsworth</h5>
+                                <h6 class="role">Thor</h6>
+                                <div class="imageRole">
+                                    <img src="..\roleimg\Chris Hemsworth.jpg" alt="" class="roleImage">
+                                </div>
+                            </div>
+                            <div class="role1">
+                                <h5 class="roleName">Scarlet Johansson</h5>
+                                <h6 class="role">Captain America</h6>
+                                <div class="imageRole">
+                                    <img src="..\roleimg\Black widow.jpg" alt="" class="roleImage">
+                                </div>
+                            </div>
+                            <div class="role1">
+                                <h5 class="roleName">Jeremy Renner</h5>
+                                <h6 class="role">Hawkeye</h6>
+                                <div class="imageRole">
+                                    <img src="..\roleimg\hawkeye.jpg" alt="" class="roleImage">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="trailerVideoBox">
+                        <div class="trailer">Trailer</div>
+                        <iframe class="youtubeTrailer" width="774" height="440" src="https://www.youtube.com/embed/eOrNdBpGMv8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <div class="watchMovie">
+                        <div class="watch">Watch The Movie in English</div>
+                        <div class="fullMovie">
+                            <a href="/html/watchMovies/29avengers.html">If you want watch a full movie. <span>Click on me</span>. Only original english version available.</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="movie" data-name="loki">
+                <div class="movieImageCover">
+                    <img src="/img/loki.jpeg" alt="">
+                </div>
+                <div class="details">
+                    <div class="title">
+                        <h1>Loki</h1>
+                        <button class="exit" onclick="exitDetail(30)">
+                            <strong>X</strong>
+                        </button>
+                    </div>
+                    <div class="story">
+                        <div class="types">
+                            <div class="type">Action</div>
+                            <div class="type">Adventure</div>
+                            <div class="type">Sci-Fi</div>
+                        </div>
+                        <p class="text">The mercurial villain Loki resumes his role as the God of Mischief in a new series that takes place after the events of “Avengers: Endgame.”</p>
+                    </div>
+                    <div class="casts">
+                        <div class="topCast">Top Casts</div>
+                        <div class="roles">
+                            <div class="role1">
+                                <h5 class="roleName">Tom Hiddleston</h5>
+                                <h6 class="role">Loki</h6>
+                                <div class="imageRole">
+                                    <img src="..\roleimg\loki\Tom Hiddleston.jpg" alt="" class="roleImage">
+                                </div>
+                            </div>
+                            <div class="role1">
+                                <h5 class="roleName">Owen Wilson</h5>
+                                <h6 class="role">Mobius</h6>
+                                <div class="imageRole">
+                                    <img src="..\roleimg\loki\Owen Wilson.jpg" alt="" class="roleImage">
+                                </div>
+                            </div>
+                            <div class="role1">
+                                <h5 class="roleName">Gugu Mbatha-Raw</h5>
+                                <h6 class="role">Ravonna Renslayer</h6>
+                                <div class="imageRole">
+                                    <img src="..\roleimg\loki\Gugu Mbatha-Raw.jpg" alt="" class="roleImage">
+                                </div>
+                            </div>
+                            <div class="role1">
+                                <h5 class="roleName">Sophia Di Martino</h5>
+                                <h6 class="role">Sylvie</h6>
+                                <div class="imageRole">
+                                    <img src="..\roleimg\loki\Sophia Di Martino.jpg" alt="" class="roleImage">
+                                </div>
+                            </div>
+                            <div class="role1">
+                                <h5 class="roleName">Wunmi Mosaku</h5>
+                                <h6 class="role">Hunter B-15</h6>
+                                <div class="imageRole">
+                                    <img src="..\roleimg\loki\Wunmi Mosaku.jpg" alt="" class="roleImage">
+                                </div>
+                            </div>
+                            <div class="role1">
+                                <h5 class="roleName">Richard E. Grant</h5>
+                                <h6 class="role">Classic Loki</h6>
+                                <div class="imageRole">
+                                    <img src="/roleimg/loki/Richard E. Grant.webp" alt="" class="roleImage">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="trailerVideoBox">
+                        <div class="trailer">Trailer</div>
+                        <iframe class="youtubeTrailer" width="774" height="440" src="https://www.youtube.com/embed/nW948Va-l10" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <div class="watchMovie">
+                        <div class="watch">Watch The Movie in English</div>
+                        <div class="fullMovie">
+                            <a href="/html/watchMovies/30loki.html">If you want watch a full movie. <span>Click on me</span>. Only original english version available.</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="movie" data-name="whatif">
+                <div class="movieImageCover">
+                    <img src="/img/what if.webp" alt="">
+                </div>
+                <div class="details">
+                    <div class="title">
+                        <h1>What If...?</h1>
+                        <button class="exit" onclick="exitDetail(31)">
+                            <strong>X</strong>
+                        </button>
+                    </div>
+                    <div class="story">
+                        <div class="types">
+                            <div class="type">Action</div>
+                            <div class="type">Adventure</div>
+                            <div class="type">Sci-Fi</div>
+                        </div>
+                        <p class="text">Exploring pivotal moments from the Marvel Cinematic Universe and turning them on their head, leading the audience into uncharted territory.</p>
+                    </div>
+                    <div class="casts">
+                        <div class="topCast">Top Casts</div>
+                        <div class="roles">
+                            <div class="role1">
+                                <h5 class="roleName">Jeffrey Wright</h5>
+                                <h6 class="role">The Watcher</h6>
+                                <div class="imageRole">
+                                    <img src="/roleimg/whatif/Jeffrey Wright.jpeg" alt="" class="roleImage">
+                                </div>
+                            </div>
+                            <div class="role1">
+                                <h5 class="roleName">Terri Douglas</h5>
+                                <h6 class="role">Additional Voice</h6>
+                                <div class="imageRole">
+                                    <img src="/roleimg/whatif/Terri Douglas.jpg" alt="" class="roleImage">
+                                </div>
+                            </div>
+                            <div class="role1">
+                                <h5 class="roleName">Matthew Wood</h5>
+                                <h6 class="role">Additional Voice</h6>
+                                <div class="imageRole">
+                                    <img src="/roleimg/whatif/Matthew Wood.jpg" alt="" class="roleImage">
+                                </div>
+                            </div>
+                            <div class="role1">
+                                <h5 class="roleName">Robin Atkin Downes</h5>
+                                <h6 class="role">Additional Voice</h6>
+                                <div class="imageRole">
+                                    <img src="/roleimg/whatif/Robin Atkin Downes.jpg" alt="" class="roleImage">
+                                </div>
+                            </div>
+                            <div class="role1">
+                                <h5 class="roleName">Fred Tatasciore</h5>
+                                <h6 class="role">Additional Voice</h6>
+                                <div class="imageRole">
+                                    <img src="/roleimg/whatif/Fred Tatasciore.jpg" alt="" class="roleImage">
+                                </div>
+                            </div>
+                            <div class="role1">
+                                <h5 class="roleName">Samuel L. Jackson</h5>
+                                <h6 class="role">Nick Fury</h6>
+                                <div class="imageRole">
+                                    <img src="/roleimg/whatif/Samuel L. Jackson.jpg" alt="" class="roleImage">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="trailerVideoBox">
+                        <div class="trailer">Trailer</div>
+                        <iframe class="youtubeTrailer" width="774" height="440" src="https://www.youtube.com/embed/x9D0uUKJ5KI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <div class="watchMovie">
+                        <div class="watch">Watch The Movie in English</div>
+                        <div class="fullMovie">
+                            <a href="/html/watchMovies/31whatif.html">If you want watch a full movie. <span>Click on me</span>. Only original english version available.</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="movie" data-name="shangchi">
+                <div class="movieImageCover">
+                    <img src="/img/shangchi.jpeg" alt="">
+                </div>
+                <div class="details">
+                    <div class="title">
+                        <h1>Shangchi: The Legend of The Ten Rings</h1>
+                        <button class="exit" onclick="exitDetail(32)">
+                            <strong>X</strong>
+                        </button>
+                    </div>
+                    <div class="story">
+                        <div class="types">
+                            <div class="type">Action</div>
+                            <div class="type">Adventure</div>
+                            <div class="type">Sci-Fi</div>
+                        </div>
+                        <p class="text">Shang-Chi, the master of weaponry-based Kung Fu, is forced to confront his past after being drawn into the Ten Rings organization.</p>
+                    </div>
+                    <div class="casts">
+                        <div class="topCast">Top Casts</div>
+                        <div class="roles">
+                            <div class="role1">
+                                <h5 class="roleName">Simu Liu</h5>
+                                <h6 class="role">Shaun</h6>
+                                <div class="imageRole">
+                                    <img src="/roleimg/shangchi/Simu Liu.jpg" alt="" class="roleImage">
+                                </div>
+                            </div>
+                            <div class="role1">
+                                <h5 class="roleName">Awkwafina</h5>
+                                <h6 class="role">Katy</h6>
+                                <div class="imageRole">
+                                    <img src="/roleimg/shangchi/Awkwafina.jpg" alt="" class="roleImage">
+                                </div>
+                            </div>
+                            <div class="role1">
+                                <h5 class="roleName">Tony Chiu-Wai Leung</h5>
+                                <h6 class="role">Xu Wenwu</h6>
+                                <div class="imageRole">
+                                    <img src="/roleimg/shangchi/Tony Chiu-Wai Leung.jpg" alt="" class="roleImage">
+                                </div>
+                            </div>
+                            <div class="role1">
+                                <h5 class="roleName">Ben Kingsley</h5>
+                                <h6 class="role">Trevor Slattery</h6>
+                                <div class="imageRole">
+                                    <img src="/roleimg/shangchi/Ben Kingsley.jpg" alt="" class="roleImage">
+                                </div>
+                            </div>
+                            <div class="role1">
+                                <h5 class="roleName">Meng'er Zhang</h5>
+                                <h6 class="role">Xialing</h6>
+                                <div class="imageRole">
+                                    <img src="/roleimg/shangchi/Meng'er Zhang.jpg" alt="" class="roleImage">
+                                </div>
+                            </div>
+                            <div class="role1">
+                                <h5 class="roleName">Fala Chen</h5>
+                                <h6 class="role">Li</h6>
+                                <div class="imageRole">
+                                    <img src="/roleimg/shangchi/Fala Chen.jpg" alt="" class="roleImage">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="trailerVideoBox">
+                        <div class="trailer">Trailer</div>
+                        <iframe class="youtubeTrailer" width="774" height="440" src="https://www.youtube.com/embed/8YjFbMbfXaQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <div class="watchMovie">
+                        <div class="watch">Watch The Movie in English</div>
+                        <div class="fullMovie">
+                            <a href="/html/watchMovies/32shangchi.html">If you want watch a full movie. <span>Click on me</span>. Only original english version available.</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="movie" data-name="falconandwintersoldier">
+                <div class="movieImageCover">
+                    <img src="/img/the falcon and winter soldier.jpeg" alt="">
+                </div>
+                <div class="details">
+                    <div class="title">
+                        <h1>The Falcon and The Winter Soldier</h1>
+                        <button class="exit" onclick="exitDetail(33)">
+                            <strong>X</strong>
+                        </button>
+                    </div>
+                    <div class="story">
+                        <div class="types">
+                            <div class="type">Action</div>
+                            <div class="type">Adventure</div>
+                            <div class="type">Sci-Fi</div>
+                        </div>
+                        <p class="text">The mercurial villain Loki resumes his role as the God of Mischief in a new series that takes place after the events of “Avengers: Endgame.”</p>
+                    </div>
+                    <div class="casts">
+                        <div class="topCast">Top Casts</div>
+                        <div class="roles">
+                            <div class="role1">
+                                <h5 class="roleName">Tom Hiddleston</h5>
+                                <h6 class="role">Loki</h6>
+                                <div class="imageRole">
+                                    <img src="..\roleimg\loki\Tom Hiddleston.jpg" alt="" class="roleImage">
+                                </div>
+                            </div>
+                            <div class="role1">
+                                <h5 class="roleName">Owen Wilson</h5>
+                                <h6 class="role">Mobius</h6>
+                                <div class="imageRole">
+                                    <img src="..\roleimg\loki\Owen Wilson.jpg" alt="" class="roleImage">
+                                </div>
+                            </div>
+                            <div class="role1">
+                                <h5 class="roleName">Gugu Mbatha-Raw</h5>
+                                <h6 class="role">Ravonna Renslayer</h6>
+                                <div class="imageRole">
+                                    <img src="..\roleimg\loki\Gugu Mbatha-Raw.jpg" alt="" class="roleImage">
+                                </div>
+                            </div>
+                            <div class="role1">
+                                <h5 class="roleName">Sophia Di Martino</h5>
+                                <h6 class="role">Sylvie</h6>
+                                <div class="imageRole">
+                                    <img src="..\roleimg\loki\Sophia Di Martino.jpg" alt="" class="roleImage">
+                                </div>
+                            </div>
+                            <div class="role1">
+                                <h5 class="roleName">Wunmi Mosaku</h5>
+                                <h6 class="role">Hunter B-15</h6>
+                                <div class="imageRole">
+                                    <img src="..\roleimg\loki\Wunmi Mosaku.jpg" alt="" class="roleImage">
+                                </div>
+                            </div>
+                            <div class="role1">
+                                <h5 class="roleName">Richard E. Grant</h5>
+                                <h6 class="role">Classic Loki</h6>
+                                <div class="imageRole">
+                                    <img src="/roleimg/loki/Richard E. Grant.webp" alt="" class="roleImage">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="trailerVideoBox">
+                        <div class="trailer">Trailer</div>
+                        <iframe class="youtubeTrailer" width="774" height="440" src="https://www.youtube.com/embed/IWBsDaFWyTE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <div class="watchMovie">
+                        <div class="watch">Watch The Movie in English</div>
+                        <div class="fullMovie">
+                            <a href="/html/watchMovies/33wintersoldierandfalcon.html">If you want watch a full movie. <span>Click on me</span>. Only original english version available.</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="java.js"></script>
+</body>
+</html>

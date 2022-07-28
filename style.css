@@ -1,0 +1,323 @@
+img {
+    width: 240px;
+    height: 350px;
+    border: 1px solid black;
+}
+
+.container {
+    position: fixed;
+    animation-name: delay;
+    opacity: 0;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes delay {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+
+.images {
+    display: flex;
+    margin-left: 150px;
+    flex-direction: row;
+    overflow: scroll;
+    width: 1290px;
+    background-color: rgba(214, 207, 207, 0.88);
+}
+
+body {
+    display: flex;
+    font-family: 'Roboto Flex', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.searchPart {
+    display: flex;
+    justify-content: center;
+    margin-top: 37px;
+    margin-bottom: 60px;
+}
+
+.searchMovie {
+    width: 900px;
+    height: 50px;
+    border-radius: 5px;
+    border: 1px solid rgb(95, 95, 200);
+    padding-left: 20px;
+    font-size: 22px;
+}
+
+h4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    background-color: rgb(252, 251, 251);
+    color: black;
+    font-weight: bolder;
+    font-size: 17px;
+    margin-top: 17px;
+    margin-bottom: 0px;
+}
+
+.image-cart {
+    margin-left: 15px;
+    margin-right: 15px;
+    cursor: pointer;
+    margin-bottom: 15px;
+}
+
+#myVideo {
+    position: fixed;
+    object-fit: cover;
+    width: 100vw;
+    height: 100vh;
+    z-index: 0;
+}
+
+.playpause {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    background: none;
+    border: none;
+    margin-bottom: 20px;
+    margin-right: 50px;
+}
+
+.playpause i {
+    font-size: 30px;
+    color: azure;
+    cursor: pointer;
+    opacity: 0;
+    animation-name: delay;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    /* animation-delay: 34s; */
+    transition: .3s;
+}
+
+.playpause i:hover, .hideAndShow span:hover {
+    color: red;
+    transform: scale(1.1);
+    transition: .3s;
+}
+
+.hideAndShow {
+    position: fixed;
+    right: 0;
+    background: none;
+    border: none;
+    margin-top: 15px;
+    margin-right: 15px;
+}
+
+.hideAndShow span {
+    font-weight: bolder;
+    font-size: 25px;
+    color: azure;
+    cursor: pointer;
+    opacity: 0;
+    animation-name: delay;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    transition: .3s;
+}
+
+
+.movieInformationPage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+
+}
+
+.movie {
+    display: none;
+    position: fixed;
+    grid-template-columns: 1fr 2fr;
+    align-items: center;
+    height: 90vh;
+    width: 90vw;
+    background-color: white;
+    background-image: url('img/Marvel-Logo.png');
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-position: center ;
+    background-blend-mode: hard-light;
+}
+
+.movieImageCover {
+    display: flex;
+    justify-content: center;
+}
+.movieImageCover img {
+    transform: scale(1.5);
+}
+
+.details {
+    height: 530px;
+    margin-left: 50px;
+    margin-right: 40px;
+    overflow: scroll;
+}
+
+.title {
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid black;
+    margin-bottom: 20px;
+    margin-top: -10px;
+}
+
+.movieTitle {
+    display: flex;
+    font-weight: 900;
+    margin-bottom: 10px;
+}
+.casts {
+    margin-top: 50px;
+}
+
+.topCast, .trailer, .watch {
+    font-size: 30px;
+    font-weight: 600;
+    border-bottom: 1px solid gray;
+}
+
+.roles {
+    display: flex;
+    margin-top: 30px;
+}
+
+.role1 {
+    margin-right: 10px;
+    width: 120px;
+    background-color: rgb(231, 227, 227);
+}
+
+.roleName {
+    display: flex;
+    justify-content: center;
+    margin-top: 5px;
+}
+
+.role {
+    display: flex;
+    justify-content: center;
+    margin-top: -17px
+    
+}
+
+.imageRole {
+    display: flex;
+    justify-content: center;
+}
+.roleImage {
+    margin-top: -15px;
+    margin-bottom: 10px;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.trailerVideoBox {
+    margin-top: 50px;
+}
+
+.youtubeTrailer, .fullMovie {
+    margin-top: 30px;
+}
+
+.fullMovie a {
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+
+}
+
+span:hover {
+    color: red;
+    transform: scale(1.2);
+}
+
+.types {
+    display: flex;
+}
+
+.type {
+    margin-right: 10px;
+    padding: 10px;
+    background-color: rgb(205, 54, 54);
+    border-radius: 30px;
+    color: white;
+    font-weight: bolder;
+}
+
+.text {
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.watchMovie {
+    margin-top: 50px;
+    text-decoration: none;
+}
+
+.exit {
+    position: fixed;
+    background: none;
+    border: none;
+    cursor: pointer;
+    right: 0;
+    top: 0;
+    margin-right: 80px;
+    margin-top: 44px;
+    font-size: 22px;
+}
+
+.videoSound{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin-bottom: 21px;
+    margin-right: 17px;
+    width: 30px;
+    height: 30px;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    transition: .3s;
+    cursor: pointer;
+    animation-name: delay;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+}
+
+.videoSound span{
+    font-size: 25px;
+    color: white;
+    color: rgb(92,1,0, 0.9);
+}
+
+.videoSound:hover{
+    background-color: red;
+    transform: scale(1.1);
+}
+
+.videoSound span:hover {
+    transform: scale(1);
+}
+
+
+

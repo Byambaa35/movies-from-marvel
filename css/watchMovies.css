@@ -1,0 +1,140 @@
+* {
+    margin: 0;
+    left: 0;
+}
+
+body{
+    font-family: 'Roboto Flex', sans-serif;
+    height: 90vh;
+    background-image: url('../img/Asgard.webp');
+    background-position: center;
+    background-size: 1600px 890px;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: red;
+    width: 100vw;
+    height: 3vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.header a {
+    cursor: pointer;
+    text-decoration: none;
+    color: white;
+}
+
+.container{
+    margin-top: 10px;
+    height: 98vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.box {
+    width: 70vw;
+    height: 87vh;
+    display: grid;
+    justify-content: center;
+    box-shadow: 0 0 10px 3px black;
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    border-bottom: 1px solid black;
+    height: 5vh;
+    font-weight: 900;
+    background: linear-gradient(to top, rgb(254, 247, 247), rgb(255, 255, 255, 0));
+}
+
+.length {
+    display: flex;
+    justify-content: center;
+    height: 3vh;
+}
+
+.tutoriol {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 5vh;
+}
+
+.tutoriol p {
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+    transition: .3s;
+}
+
+.tutoriol p:hover {
+    background-color: black;
+    color: white;
+    box-shadow: 0 0 10px 1px rgb(142, 134, 134);
+    cursor: pointer;
+}
+
+.tutorialPage {
+    display: none;
+    align-items: center;
+    position: fixed;
+    background: linear-gradient(to top right, gray, white);
+    top: 10vh;
+    left: 5vw;
+    width: 90vw;
+    height: 80vh;
+}
+
+.titles{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 20px;
+    margin-top: -20px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid gray;
+}
+
+.titles h3:nth-child(2){
+    animation: hover;
+    color: black;
+    padding-left: 5px;
+    padding-right: 5px;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-delay: 5s;
+    cursor: pointer;
+}
+
+@keyframes hover {
+    0% {transform: translateX(0px); background-color: red; color: aliceblue;}
+    50% {transform: translateX(-20px); color: aliceblue;}
+    100% {transform: translateX(0px); background-color: red; color: aliceblue;}
+}
+
+.bodyTuto {
+    display: flex;
+    align-items: center;
+}
+
+.tutos {
+    height: 30vh;
+    display: grid;
+    align-items: center;
+    margin-left: 20px;
+    font-size: 20px;
+}
+
+
+.bodyTuto img{
+    margin-left: 50px;
+}
+
